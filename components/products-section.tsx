@@ -47,8 +47,9 @@ export function ProductsSection() {
 
   const getImageSrc = (imagePath?: string) => {
     if (!imagePath) return "/placeholder.svg"
-    // Ensure path starts with "/"
-    return imagePath.startsWith("/") ? imagePath : `/${imagePath}`
+    // Ensure path starts with "/" and encode spaces
+    const path = imagePath.startsWith("/") ? imagePath : `/${imagePath}`
+    return path.replace(/ /g, '%20')
   }
 
   const filteredProducts = activeCategory === "All" 
