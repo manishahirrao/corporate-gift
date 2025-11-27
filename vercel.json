@@ -1,12 +1,10 @@
 {
   "version": 2,
+  "outputDirectory": "out",
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "outputDirectory": "out"
-      }
+      "use": "@vercel/static-build"
     }
   ],
   "routes": [
