@@ -96,7 +96,7 @@ export function HeroSection() {
           <div className="relative animate-on-scroll opacity-0 order-1 lg:order-2" style={{ animationDelay: "200ms" }}>
             <div className="relative aspect-[4/5] sm:aspect-[3/4] lg:aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/elegant-luxury-gift-box-with-ribbon-premium-corpor.jpg".replace(/ /g, '%20')
+                src={"/elegant-luxury-gift-box-with-ribbon-premium-corpor.jpg".replace(/ /g, '%20')}
                 alt="Premium corporate gift box"
                 fill
                 className="object-cover"
