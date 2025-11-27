@@ -31,11 +31,7 @@ const nextConfig = {
   // Enable source maps in production
   productionBrowserSourceMaps: true,
   
-  // Disable the default file-system routing for the pages directory
-  // and use the app directory for routing
-  experimental: {
-    appDir: true,
-  },
+  // Remove experimental appDir as it's not needed for static export
 };
 
 export default nextConfig;
