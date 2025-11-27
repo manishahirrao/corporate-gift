@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export -o dist",
-    "postbuild": "cp -r public/. dist/",
+    "build": "next build && next export -o out",
     "start": "next start",
     "lint": "eslint .",
     "preview": "next build && next start"
