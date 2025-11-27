@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build",
     "dev": "next dev",
+    "build": "next build && next export -o dist",
+    "postbuild": "cp -r public/. dist/",
+    "start": "next start",
     "lint": "eslint .",
-    "start": "next start"
+    "preview": "next build && next start"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
