@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && npx copyfiles -u 1 \"public/**/*\" out && npx copyfiles -u 1 \"out/**/*\" public",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint .",
     "preview": "next build && next start"
