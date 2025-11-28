@@ -46,8 +46,9 @@ export function ProductsSection() {
 
   const getImageSrc = (imagePath?: string) => {
     if (!imagePath) return "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI2RkZCIvPjx0ZXh0IHg9IjUwIiB5PSI1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSIjNjY2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+Tm8gSW1hZ2U8L3RleHQ+PC9zdmc+"
-    // Ensure path starts with "/"
-    return imagePath.startsWith("/") ? imagePath : `/${imagePath}`
+    // Ensure path starts with "/" and encode spaces
+    const cleanPath = imagePath.startsWith("/") ? imagePath : `/${imagePath}`
+    return cleanPath.replace(/ /g, '%20')
   }
 
   const filteredProducts = activeCategory === "All" 
