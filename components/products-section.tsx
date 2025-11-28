@@ -39,7 +39,6 @@ export function ProductsSection() {
   }
 
   const handleCategoryChange = (category: string) => {
-    console.log('Filter clicked:', category, 'Products:', getProductCount(category))
     setActiveCategory(category)
     // Reset display count - show more for "All" category
     setDisplayCount(category === "All" ? 16 : 8)
@@ -54,15 +53,6 @@ export function ProductsSection() {
   const filteredProducts = activeCategory === "All" 
     ? products.slice(0, displayCount) 
     : products.filter((p) => p.category === activeCategory).slice(0, displayCount)
-
-  // Debug: Log filtered products and their images
-  console.log('Active Category:', activeCategory)
-  console.log('Filtered Products:', filteredProducts.map(p => ({ 
-    id: p.id, 
-    name: p.name, 
-    image: p.image,
-    imageSrc: getImageSrc(p.image)
-  })))
 
   const handleProductClick = (product: Product) => {
     setSelectedProduct(product)
@@ -137,12 +127,10 @@ export function ProductsSection() {
                     loading={index < 8 ? "eager" : "lazy"}
                     sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
                     onError={(e) => {
-                      console.log('Image failed to load:', getImageSrc(product.image))
-                      // Fallback to a placeholder
-                      e.currentTarget.src = '/placeholder.svg'
+                      // Image failed to load silently
                     }}
                     onLoad={() => {
-                      console.log('Image loaded successfully:', getImageSrc(product.image))
+                      // Image loaded successfully
                     }}
                   />
                 {product.featured && (

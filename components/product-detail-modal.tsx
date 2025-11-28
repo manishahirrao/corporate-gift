@@ -38,8 +38,7 @@ export function ProductDetailModal({ product, isOpen, onClose }: ProductDetailMo
               alt={product.name}
               className="w-full h-full object-contain p-4"
               onError={(e) => {
-                console.log('Modal image failed to load:', getImageSrc(product.image))
-                e.currentTarget.src = '/placeholder.svg'
+                // Modal image failed to load silently
               }}
             />
           </div>
