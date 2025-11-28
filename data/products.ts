@@ -19,7 +19,7 @@ export const products: Product[] = [
     name: "6 in 1 Premium Gift Set",
     category: "Premium Combo",
     description: "A5 Size Diary, Flask, Metal Pen, Metal Keychain, Pendrive, Business Card Holder",
-    image: "/6 in 1 combo.jpeg",
+    image: "/6_in_1_combo.jpeg",
     specifications: "Pendrive is an Optional, More Space For Logo Branding",
     capacity: "500ml",
     size: "L-24.7cm X W-23.6cm X H-8cm",
@@ -30,7 +30,7 @@ export const products: Product[] = [
     name: "6 in 1 Premium Gift Set",
     category: "Premium Combo",
     description: "A5 Size Diary, Flask, Metal Pen, Metal Keychain, Pendrive, Business Card Holder",
-    image: "/6 in 1 combo 1.jpg",
+    image: "/6_in_1_combo_1.jpg",
     specifications: "Pendrive is an Optional, Metal Plate is an Optional",
     capacity: "16GB/32GB",
     size: "L-27cm X W-23.3cm X H-8cm",
@@ -41,7 +41,7 @@ export const products: Product[] = [
     name: "6 in 1 Premium Gift Set",
     category: "Premium Combo",
     description: "Planner Diary, Vacuum Flask, Metal Roller Pen, Metal Keychain, Pendrive, Business Card Holder",
-    image: "/6 in 1 combo 1.jpg",
+    image: "/6_in_1_combo_1.jpg",
     specifications: "Pen Holder Top, Keep Debit Card ATM Card, Identity Card etc, Pendrive is an Optional",
   },
 
@@ -51,33 +51,31 @@ export const products: Product[] = [
     name: "5 in 1 Premium Gift Set",
     category: "Executive Combo",
     description: "A5 Size Diary, Flask, Metal Pen, 3 Fold Umbrella, Pendrive",
-    image: "/5 in 1 combo.jpg",
+    image: "/5_in_1_combo.jpg",
     specifications: "Pendrive is an Optional",
     capacity: "16GB/32GB",
-    size: "L-39.4cm X W-25.3cm X H-7.5cm",
-    colors: ["Additional Colors"]
+    size: "L-26.5cm X W-23.3cm X H-8cm",
+    featured: true
   },
   {
     id: "H985",
     name: "5 in 1 Gift Set",
     category: "Executive Combo",
-    description: "A5 Size Notebook Diary + Flask + Metal Pen + Laptop Stand + Pendrive",
-    image: "/5 in 1 combo1.jpg",
-    specifications: "Vacuum Flask 500 ml, Pendrive Optional 16 GB",
-    capacity: "500ml",
-    size: "L-39.4 cm X W-19.4 cm X H-7.5 cm",
-    colors: ["Additional Colors"]
+    description: "A5 Size Diary, Vacuum Flask, Metal Roller Pen, 3 Fold Umbrella, Pendrive",
+    image: "/5_in_1_combo1.jpg",
+    specifications: "Pendrive is an Optional",
+    capacity: "16GB/32GB",
+    size: "L-26.5cm X W-23.3cm X H-8cm",
   },
   {
     id: "H986",
     name: "5 in 1 Gift Set",
     category: "Executive Combo",
-    description: "A5 Size Diary + Flask + Metal Pen + Laptop Stand + Pendrive",
-    image: "/5 in 1 combo2.jpg",
-    specifications: "Vacuum Flask 500 ml, Pendrive Optional 16 GB",
-    capacity: "500ml",
-    size: "L-39.4 cm X W-19.4 cm X H-7.5 cm",
-    colors: ["Additional Colors"]
+    description: "A5 Size Diary, Vacuum Flask, Metal Roller Pen, 3 Fold Umbrella, Pendrive",
+    image: "/5_in_1_combo2.jpg",
+    specifications: "Pendrive is an Optional",
+    capacity: "16GB/32GB",
+    size: "L-26.5cm X W-23.3cm X H-8cm",
   },
 
   // 4 in 1 Combo Gift Sets
@@ -86,7 +84,7 @@ export const products: Product[] = [
     name: "4 in 1 Gift Set",
     category: "Deluxe Combo",
     description: "Small Diary, Metal Hook Keychain, Metal Pen, Dual Side Business Card Holder",
-    image: "/4 in 1 combo.webp",
+    image: "/4_in_1_combo.webp",
     specifications: "Carboard Box",
     size: "L-22.2cm X W-24.5cm X H-3.5cm",
     colors: ["Additional Colors"]
@@ -96,7 +94,7 @@ export const products: Product[] = [
     name: "4 in 1 Gift Set",
     category: "Deluxe Combo",
     description: "A5 Size Diary, Metal Keychain, Metal Pen, Dual Side Business Card Holder",
-    image: "/4 in 1 combo 3.webp",
+    image: "/4_in_1_combo_3.webp",
     specifications: "Cardboard Box, Dual Side Business Card Holder",
     size: "L-29cm X W-22.5cm X H-3.5cm",
     colors: ["Additional Colors"]
@@ -106,7 +104,7 @@ export const products: Product[] = [
     name: "4 in 1 Premium Gift Set",
     category: "Deluxe Combo",
     description: "Diary + Passport + Pen + Keychain",
-    image: "/4 in 1 combo2.jpg",
+    image: "/4_in_1_combo2.jpg",
     specifications: "Document Holder (Adhar Card, Visiting Card, Credit Card), Metal Plate is an Optional",
     size: "L-25.9 cm X W-22.9 cm",
     colors: ["Additional Colors"]
@@ -116,7 +114,7 @@ export const products: Product[] = [
     name: "4 in 1 Premium Gift Set",
     category: "Deluxe Combo",
     description: "Diary + Metal Pen + Keychain + Business Card Holder",
-    image: "/4 in 1 combo 3.webp",
+    image: "/4_in_1_combo_3.webp",
     size: "L-22.3cm X W-21.5 cm"
   },
   {
@@ -124,7 +122,7 @@ export const products: Product[] = [
     name: "4 in 1 Premium Gift Set",
     category: "Deluxe Combo",
     description: "Diary + Visiting Card Holder + Pen + Metal Keychain",
-    image: "/4 in 1 combo2.jpg",
+    image: "/4_in_1_combo2.jpg",
     size: "L-22.4 cm X W-28 cm",
     colors: ["Black Color", "Brown Color"]
   },
@@ -208,7 +206,7 @@ export const products: Product[] = [
     name: "3 in 1 Gift Set",
     category: "Classic Combo",
     description: "A5 Size Diary, Metal Pen, Metal Keychain",
-    image: "/elegant-luxury-gift-box-with-ribbon-premium-corpor.jpg",
+    image: "/elegant_luxury_gift_box_with_ribbon_premium_corpor.jpg",
     size: "L-22 cm X W-22 cm",
     colors: ["4 Colors", "Additional Colors"]
   },
@@ -255,7 +253,7 @@ export const products: Product[] = [
     name: "Lunch Box & SS Water Bottle Combo",
     category: "Lunch Boxes",
     description: "Premium lunch box with stainless steel water bottle",
-    image: "/lunch box.jpeg",
+    image: "/lunch_box.jpeg",
     size: "H-26.2cm X L-20.8cm X W-7.7cm",
     featured: true
   },
