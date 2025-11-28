@@ -13,598 +13,867 @@ export interface Product {
 }
 
 export const products: Product[] = [
-  // 6 in 1 Combo Gift Sets
+  // Premium Gift Combo - 6 in 1
   {
     id: "H934",
-    name: "6 in 1 Premium Gift Set",
-    category: "Premium Combo",
-    description: "A5 Size Diary, Flask, Metal Pen, Metal Keychain, Pendrive, Business Card Holder",
-    image: "/6_in_1_combo.jpeg",
-    specifications: "Pendrive is an Optional, More Space For Logo Branding",
-    capacity: "500ml",
+    name: "6 in 1 Executive Gift Set",
+    category: "Premium Gift Combo",
+    description: "Complete executive gift set with diary, flask, pen, keychain, pendrive, and card holder",
+    image: "/Premium_Gift_Combo_6_in_1.webp",
+    specifications: "Premium black box packaging, ideal for corporate gifting",
+    capacity: "500ml Flask",
     size: "L-24.7cm X W-23.6cm X H-8cm",
     featured: true
   },
   {
     id: "H935",
-    name: "6 in 1 Premium Gift Set",
-    category: "Premium Combo",
-    description: "A5 Size Diary, Flask, Metal Pen, Metal Keychain, Pendrive, Business Card Holder",
-    image: "/6_in_1_combo_1.jpg",
-    specifications: "Pendrive is an Optional, Metal Plate is an Optional",
-    capacity: "16GB/32GB",
+    name: "6 in 1 Corporate Gift Set",
+    category: "Premium Gift Combo",
+    description: "Professional gift combo with A5 diary, flask, metal pen, keychain, pendrive, business card holder",
+    image: "/Premium_Gift_Combo_6_in_1_01.webp",
+    specifications: "Elegant packaging with custom branding options",
+    capacity: "500ml Flask, 16GB/32GB Pendrive",
     size: "L-27cm X W-23.3cm X H-8cm",
-    colors: ["Additional Colors"]
+    colors: ["Black", "Blue", "Red"]
   },
   {
-    id: "H930",
-    name: "6 in 1 Premium Gift Set",
-    category: "Premium Combo",
-    description: "Planner Diary, Vacuum Flask, Metal Roller Pen, Metal Keychain, Pendrive, Business Card Holder",
-    image: "/6_in_1_combo_1.jpg",
-    specifications: "Pen Holder Top, Keep Debit Card ATM Card, Identity Card etc, Pendrive is an Optional",
+    id: "H936",
+    name: "6 in 1 Premium Business Set",
+    category: "Premium Gift Combo",
+    description: "Business gift set with planner diary, vacuum flask, roller pen, keychain, pendrive, card holder",
+    image: "/Premium_Gift_Combo_6_in_1_03.webp",
+    specifications: "Professional presentation box with pen holder top",
+    capacity: "500ml Flask",
+    size: "L-26cm X W-24cm X H-8cm"
   },
 
-  // 5 in 1 Combo Gift Sets
-  {
-    id: "H951",
-    name: "5 in 1 Premium Gift Set",
-    category: "Executive Combo",
-    description: "A5 Size Diary, Flask, Metal Pen, 3 Fold Umbrella, Pendrive",
-    image: "/5_in_1_combo.jpg",
-    specifications: "Pendrive is an Optional",
-    capacity: "16GB/32GB",
-    size: "L-26.5cm X W-23.3cm X H-8cm",
-    featured: true
-  },
-  {
-    id: "H985",
-    name: "5 in 1 Gift Set",
-    category: "Executive Combo",
-    description: "A5 Size Diary, Vacuum Flask, Metal Roller Pen, 3 Fold Umbrella, Pendrive",
-    image: "/5_in_1_combo1.jpg",
-    specifications: "Pendrive is an Optional",
-    capacity: "16GB/32GB",
-    size: "L-26.5cm X W-23.3cm X H-8cm",
-  },
-  {
-    id: "H986",
-    name: "5 in 1 Gift Set",
-    category: "Executive Combo",
-    description: "A5 Size Diary, Vacuum Flask, Metal Roller Pen, 3 Fold Umbrella, Pendrive",
-    image: "/5_in_1_combo2.jpg",
-    specifications: "Pendrive is an Optional",
-    capacity: "16GB/32GB",
-    size: "L-26.5cm X W-23.3cm X H-8cm",
-  },
-
-  // 4 in 1 Combo Gift Sets
+  // Premium Gift Combo - 4 in 1
   {
     id: "H927",
-    name: "4 in 1 Gift Set",
-    category: "Deluxe Combo",
-    description: "Small Diary, Metal Hook Keychain, Metal Pen, Dual Side Business Card Holder",
-    image: "/4_in_1_combo.webp",
-    specifications: "Carboard Box",
+    name: "4 in 1 Compact Gift Set",
+    category: "Premium Gift Combo",
+    description: "Compact gift set with diary, metal keychain, pen, and business card holder",
+    image: "/Premium_Gift_Combo_4_in_1_01.webp",
+    specifications: "Compact cardboard box packaging, space-efficient design",
     size: "L-22.2cm X W-24.5cm X H-3.5cm",
-    colors: ["Additional Colors"]
+    colors: ["Black", "Blue"]
   },
   {
     id: "H928",
-    name: "4 in 1 Gift Set",
-    category: "Deluxe Combo",
-    description: "A5 Size Diary, Metal Keychain, Metal Pen, Dual Side Business Card Holder",
-    image: "/4_in_1_combo_3.webp",
-    specifications: "Cardboard Box, Dual Side Business Card Holder",
-    size: "L-29cm X W-22.5cm X H-3.5cm",
-    colors: ["Additional Colors"]
-  },
-  {
-    id: "H979",
-    name: "4 in 1 Premium Gift Set",
-    category: "Deluxe Combo",
-    description: "Diary + Passport + Pen + Keychain",
-    image: "/4_in_1_combo2.jpg",
-    specifications: "Document Holder (Adhar Card, Visiting Card, Credit Card), Metal Plate is an Optional",
-    size: "L-25.9 cm X W-22.9 cm",
-    colors: ["Additional Colors"]
-  },
-  {
-    id: "H972",
-    name: "4 in 1 Premium Gift Set",
-    category: "Deluxe Combo",
-    description: "Diary + Metal Pen + Keychain + Business Card Holder",
-    image: "/4_in_1_combo_3.webp",
-    size: "L-22.3cm X W-21.5 cm"
-  },
-  {
-    id: "H982",
-    name: "4 in 1 Premium Gift Set",
-    category: "Deluxe Combo",
-    description: "Diary + Visiting Card Holder + Pen + Metal Keychain",
-    image: "/4_in_1_combo2.jpg",
-    size: "L-22.4 cm X W-28 cm",
-    colors: ["Black Color", "Brown Color"]
+    name: "4 in 1 Executive Set",
+    category: "Premium Gift Combo",
+    description: "Executive gift combo with A5 diary, metal keychain, pen, dual card holder",
+    image: "/Premium_Gift_Combo_4_in_1_02.jpeg",
+    specifications: "Premium packaging with dual-sided business card holder",
+    size: "L-23cm X W-25cm X H-4cm",
+    colors: ["Black", "Brown"]
   },
 
-  // 3 in 1 Combo Gift Sets
+  // Premium Gift Combo - 3 in 1
   {
     id: "H941",
-    name: "3 in 1 Gift Set",
-    category: "Classic Combo",
-    description: "A5 Size Diary, Metal Pen, Steel Water Bottle",
-    image: "/luxury-fountain-pen-gift-set-with-ink-bottles-prem.jpg",
-    specifications: "More Space For Your Logo Branding",
-    capacity: "800ml Approx",
-    size: "L-25.8cm X W-24.8cm X H-8cm"
+    name: "3 in 1 Essential Gift Set",
+    category: "Premium Gift Combo",
+    description: "Essential gift combo with diary, pen, and keychain",
+    image: "/Premium_Gift_Combo_3_in_1_01.webp",
+    specifications: "Compact tri-combo set, budget-friendly option",
+    size: "L-20cm X W-18cm X H-3cm"
   },
   {
     id: "H950",
-    name: "3 in 1 Gift Set",
-    category: "Classic Combo",
-    description: "A5 Size Diary, Metal Pen, Hot & Cold Mug",
-    image: "/luxury-belgian-chocolate-gift-box-wooden-case-prem.jpg",
-    size: "L-25.8cm X W-24.8cm X H-8cm"
+    name: "3 in 1 Classic Gift Set",
+    category: "Premium Gift Combo",
+    description: "Classic gift set with diary, metal pen, and keychain",
+    image: "/Premium_Gift_Combo_3_in_1_02.webp",
+    specifications: "Traditional gift combination, professional appearance",
+    size: "L-21cm X W-19cm X H-3.5cm"
   },
   {
     id: "H942",
-    name: "3 in 1 Gift Set",
-    category: "Classic Combo",
-    description: "A5 Size Diary, Metal Pen, Hot & Cold Flask",
-    image: "/luxury-leather-executive-gift-set-with-pen-wallet-.jpg",
-    capacity: "500ml",
-    size: "L-25.8cm X W-25.5cm X H-8cm",
-    colors: ["Additional Colors"]
-  },
-  {
-    id: "H906",
-    name: "3 in 1 Gift Set",
-    category: "Classic Combo",
-    description: "A5 Size Diary, Metal Pen, Flask With Cup",
-    image: "/luxury-cashmere-travel-set-scarf-blanket-gift.jpg",
-    capacity: "100ml",
-    size: "L-26cm X W-24cm X H-8cm",
-    colors: ["Additional Colors"]
-  },
-  {
-    id: "H908",
-    name: "3 in 1 Gift Set",
-    category: "Classic Combo",
-    description: "A5 Size Diary, Flask, Metal Pen",
-    image: "/luxury-spa-wellness-gift-box-with-candles-and-skin.jpg",
-    capacity: "550ml",
-    colors: ["Additional Colors"]
-  },
-  {
-    id: "H956",
-    name: "3 in 1 Gift Set",
-    category: "Classic Combo",
-    description: "A5 Size Diary, Metal Pen, Hot & Cold Mug",
-    image: "/luxury-tech-accessories-gift-set-wireless-charger-.jpg",
-    size: "L-32.2cm X W-25.2cm"
-  },
-  {
-    id: "H924",
-    name: "3 in 1 Gift Set",
-    category: "Classic Combo",
-    description: "A5 Size Diary, Metal Pen, Flask With Cup",
-    image: "/premium-coffee-gift-set-with-ceramic-cups-and-bean.jpg",
-    specifications: "More Space For Logo Branding",
-    size: "L-26.7cm X W-23.7cm X H-8.2cm"
-  },
-  {
-    id: "H926",
-    name: "3 in 1 Gift Set",
-    category: "Classic Combo",
-    description: "A5 Size Diary, Metal Pen, Metal Keychain",
-    image: "/premium-whiskey-gift-set-with-crystal-glasses-luxu.jpg",
-    specifications: "More Space For Your Logo",
-    size: "L-22.4 cm X W-22.4 cm"
-  },
-  {
-    id: "H960",
-    name: "3 in 1 Gift Set",
-    category: "Classic Combo",
-    description: "A5 Size Diary, Metal Pen, Metal Keychain",
-    image: "/elegant_luxury_gift_box_with_ribbon_premium_corpor.jpg",
-    size: "L-22 cm X W-22 cm",
-    colors: ["4 Colors", "Additional Colors"]
-  },
-  {
-    id: "H969",
-    name: "3 in 1 Gift Set",
-    category: "Classic Combo",
-    description: "A5 Size Notebook Diary + SS Bottle + Metal Pen",
-    image: "/elegant-employee-appreciation-gift-box-with-gourme.jpg",
-    specifications: "More Space For Logo Branding, SS Bottle is an Optional",
-    size: "L-25.9 cm X W-22.9 cm"
-  },
-  {
-    id: "H973",
-    name: "3 in 1 Gift Set",
-    category: "Classic Combo",
-    description: "Diary + Metal Pen + Keychain Hook",
-    image: "/elegant-gift-wrapping-process-hands-tying-ribbon-o.jpg",
-    size: "L-22.3 cm X W-21.5 cm",
-    colors: ["Additional Colors"]
-  },
-  {
-    id: "H977",
-    name: "3 in 1 Gift Set",
-    category: "Classic Combo",
-    description: "A5 Size Notebook Diary + SS Bottle + Metal Pen + Passport Holder",
-    image: "/festive-corporate-holiday-gift-with-elegant-season.jpg",
-    specifications: "SS Bottle is an Optional, Metal Plate Colors",
-    size: "L-25.9 cm X W-22.9 cm"
-  },
-  {
-    id: "H980",
-    name: "3 in 1 Premium Gift Set",
-    category: "Classic Combo",
-    description: "Diary + Refill + Pen + Pendrive",
-    image: "/beautifully-wrapped-corporate-gift-with-custom-bra.jpg",
-    specifications: "More Space For Logo Branding",
-    size: "L-22 cm X W-24.5 cm"
-  },
-
-  // Lunch Boxes
-  {
-    id: "H931",
-    name: "Lunch Box & SS Water Bottle Combo",
-    category: "Lunch Boxes",
-    description: "Premium lunch box with stainless steel water bottle",
-    image: "/lunch_box.jpeg",
-    size: "H-26.2cm X L-20.8cm X W-7.7cm",
-    featured: true
-  },
-  {
-    id: "H932",
-    name: "Premium Lunch Box",
-    category: "Lunch Boxes",
-    description: "High-quality lunch box for daily use",
-    image: "/lunchbox.jpeg",
-    size: "H-18cm X L-15cm X W-6cm"
-  },
-  {
-    id: "H933",
-    name: "Deluxe Lunch Box Set",
-    category: "Lunch Boxes",
-    description: "Deluxe lunch box with compartments",
-    image: "/lunchbox1.jpeg",
-    size: "H-20cm X L-18cm X W-7cm"
-  },
-
-  // Photo Frames
-  {
-    id: "H940",
-    name: "Classic Photo Frame",
-    category: "Photo Frames",
-    description: "Elegant photo frame for desk display",
-    image: "/photoframe.jpeg",
-    size: "H-15cm X W-20cm",
-    featured: true
-  },
-  {
-    id: "H941",
-    name: "Premium Photo Frame",
-    category: "Photo Frames",
-    description: "High-quality photo frame with stand",
-    image: "/photoframe1.jpeg",
-    size: "H-18cm X W-25cm"
-  },
-  {
-    id: "H942",
-    name: "Decorative Photo Frame",
-    category: "Photo Frames",
-    description: "Decorative photo frame for home and office",
-    image: "/photoframe2.jpeg",
-    size: "H-20cm X W-25cm"
-  },
-
-  {
-    id: "H922",
-    name: "2 in 1 Gift Set",
-    category: "Standard Combo",
-    description: "A5 Size Diary + Metal Pen",
-    image: "/office6.jpeg",
-    size: "L-22.5cm X W-15cm"
-  },
-  {
-    id: "H923",
-    name: "2 in 1 Gift Set",
-    category: "Standard Combo",
-    description: "A5 Size Diary + Metal Pen",
-    image: "/office7.jpeg",
-    size: "L-22.5cm X W-15cm"
-  },
-  {
-    id: "H925",
-    name: "2 in 1 Gift Set",
-    category: "Standard Combo",
-    description: "A5 Size Diary + Metal Pen",
-    image: "/office8.jpeg",
-    size: "L-22.5cm X W-15cm"
-  },
-  {
-    id: "H929",
-    name: "2 in 1 Gift Set",
-    category: "Standard Combo",
-    description: "A5 Size Diary + Metal Pen",
-    image: "/office9.jpeg",
-    size: "L-22.5cm X W-15cm"
-  },
-  {
-    id: "H937",
-    name: "2 in 1 Gift Set",
-    category: "Standard Combo",
-    description: "A5 Size Diary + Metal Pen",
-    image: "/office10.jpeg",
-    size: "L-22.5cm X W-15cm"
-  },
-  {
-    id: "H938",
-    name: "2 in 1 Gift Set",
-    category: "Standard Combo",
-    description: "A5 Size Diary + Metal Pen",
-    image: "/office11.jpeg",
-    size: "L-22.5cm X W-15cm"
-  },
-  {
-    id: "H939",
-    name: "2 in 1 Gift Set",
-    category: "Standard Combo",
-    description: "A5 Size Diary + Metal Pen",
-    image: "/office12.jpeg",
-    size: "L-22.5cm X W-15cm"
+    name: "3 in 1 Professional Set",
+    category: "Premium Gift Combo",
+    description: "Professional gift set with diary, pen, and card holder",
+    image: "/Premium_Gift_Combo_3_in_1_03.webp",
+    specifications: "Professional packaging with card holder",
+    size: "L-22cm X W-20cm X H-3cm"
   },
   {
     id: "H943",
-    name: "2 in 1 Gift Set",
-    category: "Standard Combo",
-    description: "A5 Size Diary + Metal Pen",
-    image: "/office13.jpeg",
-    size: "L-22.5cm X W-15cm"
+    name: "3 in 1 Deluxe Set",
+    category: "Premium Gift Combo",
+    description: "Deluxe gift combo with premium diary, pen, and keychain",
+    image: "/Premium_Gift_Combo_3_in_1_04.webp",
+    specifications: "Deluxe packaging with premium finish",
+    size: "L-23cm X W-21cm X H-4cm"
   },
   {
     id: "H944",
-    name: "2 in 1 Gift Set",
-    category: "Standard Combo",
-    description: "A5 Size Diary + Metal Pen",
-    image: "/office14.jpeg",
+    name: "3 in 1 Premium Set",
+    category: "Premium Gift Combo",
+    description: "Premium gift set with high-quality diary, pen, and keychain",
+    image: "/Premium_Gift_Combo_3_in_1_05.webp",
+    specifications: "Premium quality materials, elegant presentation",
+    size: "L-24cm X W-22cm X H-4cm"
+  },
+
+  // Premium Gift Combo - 2 in 1
+  
+  {
+    id: "H923",
+    name: "2 in 1 Professional Set",
+    category: "Premium Gift Combo",
+    description: "Professional gift combo with A5 diary and metal pen",
+    image: "/Premium_Gift_Combo_2_in_1_01.webp",
+    specifications: "Sleek packaging with pen clip attachment",
     size: "L-22.5cm X W-15cm"
   },
   {
-    id: "H945",
-    name: "2 in 1 Gift Set",
-    category: "Standard Combo",
-    description: "A5 Size Diary + Metal Pen",
-    image: "/office15.jpeg",
-    size: "L-22.5cm X W-15cm"
-  },
-  {
-    id: "H946",
-    name: "2 in 1 Gift Set",
-    category: "Standard Combo",
-    description: "A5 Size Diary + Metal Pen",
-    image: "/office16.jpeg",
-    size: "L-22.5cm X W-15cm"
-  },
-  {
-    id: "H947",
-    name: "2 in 1 Gift Set",
-    category: "Standard Combo",
-    description: "A5 Size Diary + Metal Pen",
-    image: "/office17.jpeg",
-    size: "L-22.5cm X W-15cm"
-  },
-  {
-    id: "H948",
-    name: "2 in 1 Gift Set",
-    category: "Standard Combo",
-    description: "A5 Size Diary + Metal Pen",
-    image: "/office18.jpeg",
-    size: "L-22.5cm X W-15cm"
-  },
-  {
-    id: "H949",
-    name: "2 in 1 Gift Set",
-    category: "Standard Combo",
-    description: "A5 Size Diary + Metal Pen",
-    image: "/office19.jpeg",
-    size: "L-22.5cm X W-15cm"
-  },
-  {
-    id: "H952",
-    name: "2 in 1 Gift Set",
-    category: "Standard Combo",
-    description: "A5 Size Diary + Metal Pen",
-    image: "/office20.jpeg",
-    size: "L-22.5cm X W-15cm"
-  },
-  {
-    id: "H953",
-    name: "2 in 1 Gift Set",
-    category: "Standard Combo",
-    description: "A5 Size Diary + Metal Pen",
-    image: "/office21.jpeg",
-    size: "L-22.5cm X W-15cm"
-  },
-  {
-    id: "H954",
-    name: "2 in 1 Gift Set",
-    category: "Standard Combo",
-    description: "A5 Size Diary + Metal Pen",
-    image: "/office22.jpeg",
-    size: "L-22.5cm X W-15cm"
-  },
-  {
-    id: "H955",
-    name: "2 in 1 Gift Set",
-    category: "Standard Combo",
-    description: "A5 Size Diary + Metal Pen",
-    image: "/office23.jpeg",
-    size: "L-22.5cm X W-15cm"
-  },
-  {
-    id: "H957",
-    name: "2 in 1 Gift Set",
-    category: "Standard Combo",
-    description: "A5 Size Diary + Metal Pen",
-    image: "/office24.jpeg",
-    size: "L-22.5cm X W-15cm"
-  },
-  {
-    id: "H958",
-    name: "2 in 1 Gift Set",
-    category: "Standard Combo",
-    description: "A5 Size Diary + Metal Pen",
-    image: "/office25.jpeg",
-    size: "L-22.5cm X W-15cm"
-  },
-  {
-    id: "H959",
-    name: "2 in 1 Gift Set",
-    category: "Standard Combo",
-    description: "A5 Size Diary + Metal Pen",
-    image: "/office26.jpeg",
-    size: "L-22.5cm X W-15cm"
-  },
-  {
-    id: "H961",
-    name: "2 in 1 Gift Set",
-    category: "Standard Combo",
-    description: "A5 Size Diary + Metal Pen",
-    image: "/office27.jpeg",
-    size: "L-22.5cm X W-15cm"
-  },
-  {
-    id: "H962",
-    name: "2 in 1 Gift Set",
-    category: "Standard Combo",
-    description: "A5 Size Diary + Metal Pen",
-    image: "/office28.jpeg",
-    size: "L-22.5cm X W-15cm"
-  },
-  {
-    id: "H963",
-    name: "2 in 1 Gift Set",
-    category: "Standard Combo",
-    description: "A5 Size Diary + Metal Pen",
-    image: "/office29.jpeg",
+    id: "H924",
+    name: "2 in 1 Classic Set",
+    category: "Premium Gift Combo",
+    description: "Classic combination of A5 diary with matching metal pen",
+    image: "/Premium_Gift_Combo_2_in_1_03.webp",
+    specifications: "Traditional design with modern functionality",
     size: "L-22.5cm X W-15cm"
   },
 
-  // Office Planner Diaries
+  // Office Diaries
   {
     id: "H1079",
     name: "Office Planner Diary With Documents Holder",
-    category: "Office Planner Diaries",
+    category: "Office Diaries",
     description: "Documents Holder You can Keep Aadhar Card, Pan Card, ATM Card, ID Card, Envelope, Letter, Cheque and Many More",
-    image: "/diaries.jpeg",
+    image: "/Office_Diaries.jpeg",
     specifications: "Diary Type: Planner Diary, Cover Material: PU Leather, Inside Pages: 200 nos., Diary Pages Thickness: 100 GSM",
     size: "H-23.2cm X W-17.5cm"
   },
   {
     id: "H1049",
     name: "Office Planner Diary with Mobile Holder & Documents Holder",
-    category: "Office Planner Diaries",
+    category: "Office Diaries",
     description: "Documents Holder You can Keep Aadhar Card, Pan Card, ATM Card, ID Card, Envelope, Letter, Cheques and Many More",
-    image: "/diaries1.jpeg",
+    image: "/Office_Diaries_01.jpeg",
     specifications: "Diary Type: Planner Diary, Cover Material: PU Leather, Inside Pages: 200 nos., Diary Pages Thickness: 100 GSM",
     size: "H-23.3cm X W-17cm"
   },
   {
     id: "H1075",
     name: "Office Planner Diary With Documents Holder",
-    category: "Office Planner Diaries",
+    category: "Office Diaries",
     description: "Documents Holder You can Keep Aadhar Card, Pan Card, ATM Card, ID Card, Envelope, Letter, Cheques and Many More",
-    image: "/diaries2.jpeg",
+    image: "/Office_Diaries_02.jpeg",
     specifications: "Diary Type: Planner Diary, Cover Material: PU Leather, Inside Pages: 200 nos., Diary Pages Thickness: 100 GSM",
     size: "H-23.5 cm X W-17cm"
   },
-
-  // Office Notebook Diaries
   {
     id: "H1052",
     name: "A5 Size Office Notebook Diary",
-    category: "Office Notebook Diaries",
+    category: "Office Diaries",
     description: "Office Notebook Diary",
-    image: "/diaries.jpeg",
+    image: "/Office_Diaries_03.webp",
     specifications: "Diary Type: Office Notebook Diary, Cover Material: PU Leather, Inside Pages: 232 nos., Diary Pages Thickness: 80GSM",
     size: "H-21.2cm X W-14.7cm"
   },
   {
     id: "H1006",
     name: "A5 Size Wooden Cover Office Notebook Diary",
-    category: "Office Notebook Diaries",
+    category: "Office Diaries",
     description: "Wooden Cover Notebook Diary",
-    image: "/diaries1.jpeg",
+    image: "/Office_Diaries_04.jpeg",
     specifications: "Diary Type: Notebook Diary, Cover Material: Wooden Cover, Inside Pages: 232 nos., Diary Pages Thickness: 80GSM",
     size: "H-22.5cm X W-15cm"
   },
+  {
+    id: "H1007",
+    name: "Premium Office Diary",
+    category: "Office Diaries",
+    description: "Premium quality office diary with leather finish",
+    image: "/Office_Diaries_05.jpeg",
+    specifications: "Diary Type: Office Diary, Cover Material: PU Leather, Inside Pages: 200 nos.",
+    size: "H-22cm X W-16cm"
+  },
+  {
+    id: "H1008",
+    name: "Executive Office Diary",
+    category: "Office Diaries",
+    description: "Executive diary with document holder",
+    image: "/Office_Diaries_06.jpeg",
+    specifications: "Diary Type: Executive Diary, Cover Material: Premium Leather, Inside Pages: 200 nos.",
+    size: "H-23cm X W-17cm"
+  },
+  {
+    id: "H1009",
+    name: "Professional Office Diary",
+    category: "Office Diaries",
+    description: "Professional diary with pen holder",
+    image: "/Office_Diaries_07.jpeg",
+    specifications: "Diary Type: Professional Diary, Cover Material: PU Leather, Inside Pages: 200 nos.",
+    size: "H-22.5cm X W-16.5cm"
+  },
+  {
+    id: "H1010",
+    name: "Classic Office Diary",
+    category: "Office Diaries",
+    description: "Classic design office diary",
+    image: "/Office_Diaries_08.jpeg",
+    specifications: "Diary Type: Classic Diary, Cover Material: PU Leather, Inside Pages: 200 nos.",
+    size: "H-23cm X W-17cm"
+  },
+  {
+    id: "H1011",
+    name: "Modern Office Diary",
+    category: "Office Diaries",
+    description: "Modern style office diary",
+    image: "/Office_Diaries_09.jpeg",
+    specifications: "Diary Type: Modern Diary, Cover Material: PU Leather, Inside Pages: 200 nos.",
+    size: "H-22cm X W-16cm"
+  },
+  {
+    id: "H1012",
+    name: "Corporate Office Diary",
+    category: "Office Diaries",
+    description: "Corporate office diary with branding space",
+    image: "/Office_Diaries_10.jpeg",
+    specifications: "Diary Type: Corporate Diary, Cover Material: PU Leather, Inside Pages: 200 nos.",
+    size: "H-23.5cm X W-17.5cm"
+  },
 
-  // Office Products
+  // Eco-Diaries
   {
     id: "H2001",
-    name: "Premium Office Set",
-    category: "Office Products",
-    description: "Complete office accessory set for professionals",
-    image: "/office.webp",
-    featured: true
+    name: "Eco-Friendly Diary",
+    category: "Eco-Diaries",
+    description: "Sustainable eco-friendly diary with recycled paper",
+    image: "/Eco_Diaries.webp",
+    specifications: "Diary Type: Eco Diary, Cover Material: Recycled Materials, Inside Pages: 200 nos., Paper: Recycled Paper",
+    size: "H-21cm X W-15cm"
   },
   {
     id: "H2002",
-    name: "Executive Office Kit",
-    category: "Office Products",
-    description: "Executive office essentials collection",
-    image: "/office1.jpeg"
+    name: "Green Eco Diary",
+    category: "Eco-Diaries",
+    description: "Environmentally friendly diary with green cover",
+    image: "/Eco_Diaries_01.jpeg",
+    specifications: "Diary Type: Eco Diary, Cover Material: Recycled Materials, Inside Pages: 200 nos.",
+    size: "H-22cm X W-16cm"
   },
   {
     id: "H2003",
-    name: "Professional Office Bundle",
-    category: "Office Products",
-    description: "Professional office supplies bundle",
-    image: "/office2.jpeg"
+    name: "Sustainable Eco Diary",
+    category: "Eco-Diaries",
+    description: "Sustainable diary with bamboo cover",
+    image: "/Eco_Diaries_02.jpeg",
+    specifications: "Diary Type: Eco Diary, Cover Material: Bamboo, Inside Pages: 200 nos.",
+    size: "H-21.5cm X W-15.5cm"
   },
   {
     id: "H2004",
-    name: "Modern Office Accessories",
-    category: "Office Products",
-    description: "Modern office accessories set",
-    image: "/office3.jpeg"
+    name: "Organic Eco Diary",
+    category: "Eco-Diaries",
+    description: "Organic materials eco diary",
+    image: "/Eco_Diaries_03.jpeg",
+    specifications: "Diary Type: Eco Diary, Cover Material: Organic Materials, Inside Pages: 200 nos.",
+    size: "H-22cm X W-16cm"
   },
   {
     id: "H2005",
-    name: "Corporate Office Set",
-    category: "Office Products",
-    description: "Corporate office essentials",
-    image: "/office4.jpeg"
+    name: "Recycled Paper Diary",
+    category: "Eco-Diaries",
+    description: "Diary made from 100% recycled paper",
+    image: "/Eco_Diaries_02.jpeg",
+    specifications: "Diary Type: Eco Diary, Cover Material: Recycled Materials, Inside Pages: 200 nos., Paper: 100% Recycled",
+    size: "H-21cm X W-15cm"
   },
 
-  // Combo Gift Sets - Special
+  // Ball Pens
   {
-    id: "H971",
-    name: "Kettle And Mugs Set",
-    category: "Combo Sets",
-    description: "Vacuum kettle And 2 Vacuum Mug",
-    image: "/premium-welcome-gift-basket-with-artisan-products-.jpg",
-    specifications: "Outer Carry Bag, Wooden Cap",
-    capacity: "Kettle: 1000ml Approx, Mugs: 250ml each",
-    size: "H-31.2cm X W-24.2cm X L-12.2cm"
+    id: "H3001",
+    name: "Premium Metal Ball Pen",
+    category: "Ball Pens",
+    description: "Sleek metal ball pen with smooth ink flow and professional finish",
+    image: "/Pen_01.jpeg",
+    specifications: "Pen Type: Ball Pen, Material: Metal Body, Ink Color: Blue/Black, Refillable: Yes",
+    size: "L-14cm X D-1cm"
+  },
+  {
+    id: "H3002",
+    name: "Executive Twist Pen",
+    category: "Ball Pens",
+    description: "Executive twist-action ball pen with premium metal construction",
+    image: "/Pen_02.jpeg",
+    specifications: "Pen Type: Twist Ball Pen, Material: Metal, Ink Color: Blue/Black, Grip: Comfort",
+    size: "L-14.5cm X D-1.2cm"
+  },
+  {
+    id: "H3003",
+    name: "Professional Gel Pen",
+    category: "Ball Pens",
+    description: "Professional gel pen with ergonomic grip and smooth writing",
+    image: "/Pen_03.jpeg",
+    specifications: "Pen Type: Gel Pen, Material: Metal, Ink Color: Blue/Black, Grip: Rubber",
+    size: "L-14cm X D-1cm"
+  },
+  {
+    id: "H3004",
+    name: "Classic Ballpoint Pen",
+    category: "Ball Pens",
+    description: "Classic design ballpoint pen with reliable performance",
+    image: "/Pen_04.jpeg",
+    specifications: "Pen Type: Ballpoint, Material: Metal, Ink Color: Blue/Black, Style: Classic",
+    size: "L-13.5cm X D-1cm"
+  },
+  {
+    id: "H3005",
+    name: "Modern Stylish Pen",
+    category: "Ball Pens",
+    description: "Modern stylish pen with contemporary design and smooth writing",
+    image: "/Pen_05.jpeg",
+    specifications: "Pen Type: Ball Pen, Material: Metal, Ink Color: Blue/Black, Design: Modern",
+    size: "L-14cm X D-1.1cm"
+  },
+  {
+    id: "H3006",
+    name: "Deluxe Metal Pen",
+    category: "Ball Pens",
+    description: "Deluxe metal pen with premium finish and comfortable grip",
+    image: "/Pen_06.jpeg",
+    specifications: "Pen Type: Ball Pen, Material: Metal, Ink Color: Blue/Black, Finish: Deluxe",
+    size: "L-14.5cm X D-1.2cm"
+  },
+  {
+    id: "H3007",
+    name: "Elegant Stylish Pen",
+    category: "Ball Pens",
+    description: "Elegant stylish pen with sophisticated design and smooth writing",
+    image: "/Pen_07.jpeg",
+    specifications: "Pen Type: Ball Pen, Material: Metal, Ink Color: Blue/Black, Design: Elegant",
+    size: "L-14cm X D-1cm"
+  },
+  {
+    id: "H3008",
+    name: "Corporate Branded Pen",
+    category: "Ball Pens",
+    description: "Corporate pen with customizable branding space and professional look",
+    image: "/Pen_08.jpeg",
+    specifications: "Pen Type: Ball Pen, Material: Metal, Ink Color: Blue/Black, Branding: Customizable",
+    size: "L-14cm X D-1cm"
+  },
+  {
+    id: "H3009",
+    name: "Business Executive Pen",
+    category: "Ball Pens",
+    description: "Business executive pen designed for professional use and corporate gifts",
+    image: "/Pen_09.jpeg",
+    specifications: "Pen Type: Ball Pen, Material: Metal, Ink Color: Blue/Black, Use: Business",
+    size: "L-14.5cm X D-1.1cm"
+  },
+  {
+    id: "H3010",
+    name: "Luxury Metal Ball Pen",
+    category: "Ball Pens",
+    description: "Luxury metal ball pen with premium finish and exceptional writing experience",
+    image: "/Pen_10.jpeg",
+    specifications: "Pen Type: Ball Pen, Material: Premium Metal, Ink Color: Blue/Black, Quality: Luxury",
+    size: "L-15cm X D-1.2cm"
+  },
+
+  // Keychains
+  {
+    id: "H4001",
+    name: "Premium Metal Keychain",
+    category: "Keychains",
+    description: "Durable metal keychain with customizable logo engraving space",
+    image: "/Key_Chains_01.jpeg",
+    specifications: "Material: Premium Metal, Finish: Polished, Customization: Logo Engraving",
+    size: "L-5cm X W-3cm"
+  },
+  {
+    id: "H4002",
+    name: "Executive Metal Keychain",
+    category: "Keychains",
+    description: "Executive style metal keychain with professional finish and branding area",
+    image: "/Key_Chains_02.jpeg",
+    specifications: "Material: Stainless Steel, Finish: Matte, Customization: Logo/Text",
+    size: "L-6cm X W-3.5cm"
+  },
+  {
+    id: "H4003",
+    name: "Corporate Gift Keychain",
+    category: "Keychains",
+    description: "Corporate gift keychain with premium metal construction and elegant design",
+    image: "/Key_Chains_03.jpeg",
+    specifications: "Material: Zinc Alloy, Finish: Chrome, Customization: Company Logo",
+    size: "L-5.5cm X W-3cm"
+  },
+  {
+    id: "H4004",
+    name: "Classic Round Keychain",
+    category: "Keychains",
+    description: "Classic round metal keychain with traditional design and durable build",
+    image: "/Key_Chains_04.jpeg",
+    specifications: "Material: Brass, Finish: Antique, Customization: Engraving",
+    size: "L-5cm X W-3cm"
+  },
+  {
+    id: "H4005",
+    name: "Modern Rectangle Keychain",
+    category: "Keychains",
+    description: "Modern rectangular keychain with sleek design and contemporary styling",
+    image: "/Key_Chains_05.jpeg",
+    specifications: "Material: Aluminum, Finish: Brushed, Customization: Laser Engraving",
+    size: "L-6cm X W-3.5cm"
+  },
+  {
+    id: "H4006",
+    name: "Luxury Gift Keychain",
+    category: "Keychains",
+    description: "Luxury keychain with premium metal finish and sophisticated design",
+    image: "/Key_Chains_06.jpeg",
+    specifications: "Material: Titanium Finish, Finish: Polished, Customization: Premium Engraving",
+    size: "L-5.5cm X W-3cm"
+  },
+  {
+    id: "H4007",
+    name: "Elegant Designer Keychain",
+    category: "Keychains",
+    description: "Elegant designer keychain with unique styling and premium materials",
+    image: "/Key_Chains_07.jpeg",
+    specifications: "Material: Designer Metal, Finish: Elegant, Customization: Custom Design",
+    size: "L-5cm X W-3cm"
+  },
+
+  // Water Bottles
+  {
+    id: "H5001",
+    name: "Premium Stainless Steel Bottle",
+    category: "Water Bottle",
+    description: "Premium grade stainless steel water bottle with double-wall insulation",
+    image: "/Bottle_01.jpeg",
+    specifications: "Material: 304 Stainless Steel, Capacity: 750ml, Insulation: Double Wall Vacuum",
+    size: "H-25cm X D-7cm",
+    featured: true
+  },
+  {
+    id: "H5002",
+    name: "Sports Fitness Bottle",
+    category: "Water Bottle",
+    description: "Sports fitness bottle with leak-proof cap and carrying strap",
+    image: "/Bottle_02.jpeg",
+    specifications: "Material: Stainless Steel, Capacity: 500ml, Features: Leak-proof, Sports Cap",
+    size: "H-22cm X D-6.5cm"
+  },
+  {
+    id: "H5003",
+    name: "Executive Business Bottle",
+    category: "Water Bottle",
+    description: "Executive business water bottle with premium finish and professional look",
+    image: "/Bottle_03.jpeg",
+    specifications: "Material: Stainless Steel, Capacity: 1000ml, Features: Premium Finish, Business Class",
+    size: "H-28cm X D-7.5cm"
+  },
+  {
+    id: "H5004",
+    name: "Classic Water Bottle",
+    category: "Water Bottle",
+    description: "Classic design water bottle",
+    image: "/Bottle_04.jpeg",
+    specifications: "Material: Stainless Steel, Capacity: 750ml, Features: Classic Design",
+    size: "H-25cm X D-7cm"
+  },
+  {
+    id: "H5005",
+    name: "Modern Water Bottle",
+    category: "Water Bottle",
+    description: "Modern style water bottle with sleek design",
+    image: "/Bottle_05.jpeg",
+    specifications: "Material: Stainless Steel, Capacity: 600ml, Features: Modern Design",
+    size: "H-24cm X D-6.5cm"
+  },
+  {
+    id: "H5006",
+    name: "Deluxe Water Bottle",
+    category: "Water Bottle",
+    description: "Deluxe water bottle with premium features",
+    image: "/Bottle_06.jpeg",
+    specifications: "Material: Stainless Steel, Capacity: 800ml, Features: Premium",
+    size: "H-26cm X D-7cm"
+  },
+  {
+    id: "H5007",
+    name: "Corporate Water Bottle",
+    category: "Water Bottle",
+    description: "Corporate water bottle with branding space",
+    image: "/Bottle_07.jpeg",
+    specifications: "Material: Stainless Steel, Capacity: 750ml, Features: Branding Space",
+    size: "H-25cm X D-7cm"
+  },
+  {
+    id: "H5008",
+    name: "Professional Water Bottle",
+    category: "Water Bottle",
+    description: "Professional water bottle for office use",
+    image: "/Bottle_08.jpeg",
+    specifications: "Material: Stainless Steel, Capacity: 700ml, Features: Professional",
+    size: "H-24.5cm X D-6.8cm"
+  },
+  {
+    id: "H5009",
+    name: "Compact Water Bottle",
+    category: "Water Bottle",
+    description: "Compact size water bottle for travel",
+    image: "/Bottle_09.webp",
+    specifications: "Material: Stainless Steel, Capacity: 350ml, Features: Compact",
+    size: "H-18cm X D-5.5cm"
+  },
+  {
+    id: "H5010",
+    name: "Large Water Bottle",
+    category: "Water Bottle",
+    description: "Large capacity water bottle for long use",
+    image: "/Bottle_10.webp",
+    specifications: "Material: Stainless Steel, Capacity: 1500ml, Features: Large Capacity",
+    size: "H-32cm X D-8cm"
+  },
+  {
+    id: "H5011",
+    name: "Mini Water Bottle",
+    category: "Water Bottle",
+    description: "Mini size water bottle for kids and short use",
+    image: "/Bottle_11.webp",
+    specifications: "Material: Stainless Steel, Capacity: 250ml, Features: Mini Size",
+    size: "H-15cm X D-5cm"
+  },
+
+  // Mix Products (placeholder items for other categories)
+  {
+    id: "H6001",
+    name: "Travel Laptop Bag",
+    category: "Travel/Laptop Bag",
+    description: "Premium laptop bag for travel and office use",
+    image: "/Laptop_bags_01.jpeg",
+    specifications: "Material: Premium Fabric, Laptop Compartment: 15.6 inch",
+    size: "L-40cm X W-30cm X H-10cm"
+  },
+  {
+    id: "H6002",
+    name: "Executive Laptop Bag",
+    category: "Travel/Laptop Bag",
+    description: "Executive style laptop bag with multiple compartments",
+    image: "/Laptop_bags_02.jpeg",
+    specifications: "Material: Premium Leather, Laptop Compartment: 15.6 inch",
+    size: "L-42cm X W-32cm X H-12cm"
+  },
+  {
+    id: "H6003",
+    name: "Business Laptop Bag",
+    category: "Travel/Laptop Bag",
+    description: "Business laptop bag with professional design",
+    image: "/Laptop_bags_03.jpeg",
+    specifications: "Material: Premium Fabric, Laptop Compartment: 15.6 inch",
+    size: "L-40cm X W-30cm X H-10cm"
+  },
+  {
+    id: "H6004",
+    name: "Modern Laptop Bag",
+    category: "Travel/Laptop Bag",
+    description: "Modern style laptop bag with sleek design",
+    image: "/Laptop_bags_04.jpeg",
+    specifications: "Material: Premium Fabric, Laptop Compartment: 15.6 inch",
+    size: "L-38cm X W-28cm X H-8cm"
+  },
+  {
+    id: "H6005",
+    name: "Compact Laptop Bag",
+    category: "Travel/Laptop Bag",
+    description: "Compact laptop bag for daily commute",
+    image: "/Laptop_bags_05.jpeg",
+    specifications: "Material: Premium Fabric, Laptop Compartment: 14 inch",
+    size: "L-35cm X W-25cm X H-8cm"
+  },
+  {
+    id: "H6006",
+    name: "Travel Organizer Bag",
+    category: "Travel Organizer Bag",
+    description: "Multi-pocket travel organizer bag",
+    image: "/Travel_bags_01.jpeg",
+    specifications: "Material: Nylon, Compartments: Multiple",
+    size: "L-25cm X W-20cm X H-8cm"
+  },
+  {
+    id: "H6007",
+    name: "Premium Travel Organizer",
+    category: "Travel Organizer Bag",
+    description: "Premium travel organizer with dedicated compartments",
+    image: "/Travel_bags_02.jpeg",
+    specifications: "Material: Premium Fabric, Compartments: Multiple",
+    size: "L-28cm X W-22cm X H-10cm"
+  },
+  {
+    id: "H6008",
+    name: "Business Travel Organizer",
+    category: "Travel Organizer Bag",
+    description: "Business travel organizer for professionals",
+    image: "/Travel_bags_03.jpeg",
+    specifications: "Material: Premium Leather, Compartments: Multiple",
+    size: "L-26cm X W-20cm X H-9cm"
+  },
+  {
+    id: "H6009",
+    name: "Compact Travel Organizer",
+    category: "Travel Organizer Bag",
+    description: "Compact travel organizer for essentials",
+    image: "/Travel_bags_04.jpeg",
+    specifications: "Material: Nylon, Compartments: Essential",
+    size: "L-22cm X W-18cm X H-7cm"
+  },
+  {
+    id: "H6010",
+    name: "Lightweight Travel Organizer",
+    category: "Travel Organizer Bag",
+    description: "Lightweight travel organizer for easy carrying",
+    image: "/Travel_bags_05.jpeg",
+    specifications: "Material: Lightweight Fabric, Compartments: Basic",
+    size: "L-20cm X W-16cm X H-6cm"
+  },
+  {
+    id: "H6011",
+    name: "Mini Travel Organizer",
+    category: "Travel Organizer Bag",
+    description: "Mini travel organizer for quick trips",
+    image: "/Travel_bags_06.jpeg",
+    specifications: "Material: Compact Fabric, Compartments: Minimal",
+    size: "L-18cm X W-14cm X H-5cm"
+  },
+  {
+    id: "H6012",
+    name: "Premium Tea-Coffee Mug",
+    category: "Tea-Coffee Mugs",
+    description: "Premium ceramic mug for tea and coffee",
+    image: "/Tea-Coffee_Mug_01.jpeg",
+    specifications: "Material: Ceramic, Capacity: 350ml",
+    size: "H-10cm X D-8cm"
+  },
+  {
+    id: "H6013",
+    name: "Executive Tea-Coffee Mug",
+    category: "Tea-Coffee Mugs",
+    description: "Executive style mug with premium finish",
+    image: "/Tea-Coffee_Mug_02.jpeg",
+    specifications: "Material: Ceramic, Capacity: 400ml",
+    size: "H-11cm X D-8.5cm"
+  },
+  {
+    id: "H6014",
+    name: "Classic Tea-Coffee Mug",
+    category: "Tea-Coffee Mugs",
+    description: "Classic design ceramic mug",
+    image: "/Tea-Coffee_Mug_03.jpeg",
+    specifications: "Material: Ceramic, Capacity: 350ml",
+    size: "H-10cm X D-8cm"
+  },
+  {
+    id: "H6015",
+    name: "Modern Tea-Coffee Mug",
+    category: "Tea-Coffee Mugs",
+    description: "Modern style mug with sleek design",
+    image: "/Tea-Coffee_Mug_04.jpeg",
+    specifications: "Material: Ceramic, Capacity: 450ml",
+    size: "H-12cm X D-9cm"
+  },
+  {
+    id: "H6016",
+    name: "Corporate Tea-Coffee Mug",
+    category: "Tea-Coffee Mugs",
+    description: "Corporate mug with branding space",
+    image: "/Tea-Coffee_Mug_05.jpeg",
+    specifications: "Material: Ceramic, Capacity: 400ml",
+    size: "H-11cm X D-8.5cm"
+  },
+  {
+    id: "H6017",
+    name: "Compact Tea-Coffee Mug",
+    category: "Tea-Coffee Mugs",
+    description: "Compact mug for personal use",
+    image: "/Tea-Coffee_Mug_06.jpeg",
+    specifications: "Material: Ceramic, Capacity: 250ml",
+    size: "H-8cm X D-6cm"
+  },
+  {
+    id: "H6018",
+    name: "Adjustable Laptop Stand",
+    category: "Laptop/Mobile Stand",
+    description: "Adjustable laptop stand for ergonomic use",
+    image: "/Stand_01.jpeg",
+    specifications: "Material: Aluminum, Adjustable: Yes",
+    size: "L-25cm X W-20cm X H-15cm"
+  },
+  {
+    id: "H6019",
+    name: "Portable Laptop Stand",
+    category: "Laptop/Mobile Stand",
+    description: "Portable laptop stand for mobile use",
+    image: "/Stand_02.jpeg",
+    specifications: "Material: Aluminum, Portable: Yes",
+    size: "L-23cm X W-18cm X H-12cm"
+  },
+  {
+    id: "H6020",
+    name: "Foldable Laptop Stand",
+    category: "Laptop/Mobile Stand",
+    description: "Foldable laptop stand for easy storage",
+    image: "/Stand_03.jpeg",
+    specifications: "Material: Aluminum, Foldable: Yes",
+    size: "L-24cm X W-19cm X H-13cm"
+  },
+  {
+    id: "H6021",
+    name: "Ergonomic Laptop Stand",
+    category: "Laptop/Mobile Stand",
+    description: "Ergonomic laptop stand for comfort",
+    image: "/Stand_04.jpeg",
+    specifications: "Material: Aluminum, Ergonomic: Yes",
+    size: "L-26cm X W-21cm X H-14cm"
+  },
+  {
+    id: "H6022",
+    name: "Desktop Laptop Stand",
+    category: "Laptop/Mobile Stand",
+    description: "Desktop laptop stand for office use",
+    image: "/Stand_05.jpeg",
+    specifications: "Material: Aluminum, Desktop: Yes",
+    size: "L-25cm X W-20cm X H-15cm"
+  },
+  {
+    id: "H6023",
+    name: "High-Speed USB Pendrive",
+    category: "USB Pendrive",
+    description: "High-speed USB pendrive for data storage",
+    image: "/USB_Pendrive_01.webp",
+    specifications: "Capacity: 32GB, USB Version: 3.0",
+    size: "L-5cm X W-2cm X H-0.8cm"
+  },
+  {
+    id: "H6024",
+    name: "Premium USB Pendrive",
+    category: "USB Pendrive",
+    description: "Premium USB pendrive with metal body",
+    image: "/USB_Pendrive_02.webp",
+    specifications: "Capacity: 64GB, USB Version: 3.0",
+    size: "L-5.5cm X W-2.2cm X H-0.9cm"
+  },
+  {
+    id: "H6025",
+    name: "Professional USB Pendrive",
+    category: "USB Pendrive",
+    description: "Professional USB pendrive for business use",
+    image: "/USB_Pendrive_03.jpeg",
+    specifications: "Capacity: 128GB, USB Version: 3.0",
+    size: "L-6cm X W-2.5cm X H-1cm"
+  },
+  {
+    id: "H6026",
+    name: "Compact USB Pendrive",
+    category: "USB Pendrive",
+    description: "Compact USB pendrive for portability",
+    image: "/USB_Pendrive_04.jpeg",
+    specifications: "Capacity: 16GB, USB Version: 3.0",
+    size: "L-4cm X W-1.8cm X H-0.7cm"
+  },
+  {
+    id: "H6027",
+    name: "Stylish USB Pendrive",
+    category: "USB Pendrive",
+    description: "Stylish USB pendrive with modern design",
+    image: "/USB_Pendrive_05.jpeg",
+    specifications: "Capacity: 64GB, USB Version: 3.0",
+    size: "L-5.2cm X W-2.1cm X H-0.8cm"
+  },
+  {
+    id: "H6028",
+    name: "Corporate Gift Set",
+    category: "Mix Products",
+    description: "Complete corporate gift set with multiple items",
+    image: "/Multi_Products_01.jpeg",
+    specifications: "Items: Multiple, Packaging: Premium Box",
+    size: "L-30cm X W-25cm X H-10cm"
+  },
+  {
+    id: "H6029",
+    name: "Executive Gift Bundle",
+    category: "Mix Products",
+    description: "Executive gift bundle with luxury items",
+    image: "/Multi_Products_02.jpeg",
+    specifications: "Items: Executive, Packaging: Premium Box",
+    size: "L-32cm X W-28cm X H-12cm"
+  },
+  {
+    id: "H6030",
+    name: "Professional Gift Set",
+    category: "Mix Products",
+    description: "Professional gift set for office use",
+    image: "/Multi_Products_03.jpeg",
+    specifications: "Items: Professional, Packaging: Standard Box",
+    size: "L-25cm X W-20cm X H-8cm"
+  },
+  {
+    id: "H6031",
+    name: "Business Gift Collection",
+    category: "Mix Products",
+    description: "Business gift collection with essentials",
+    image: "/Multi_Products_04.jpeg",
+    specifications: "Items: Business, Packaging: Professional Box",
+    size: "L-28cm X W-22cm X H-9cm"
+  },
+  {
+    id: "H6032",
+    name: "Premium Corporate Package",
+    category: "Mix Products",
+    description: "Premium corporate package with high-end items",
+    image: "/Multi_Products_05.jpeg",
+    specifications: "Items: Premium, Packaging: Luxury Box",
+    size: "L-35cm X W-30cm X H-15cm"
+  },
+  {
+    id: "H6033",
+    name: "Deluxe Gift Bundle",
+    category: "Mix Products",
+    description: "Deluxe gift bundle with exclusive items",
+    image: "/Multi_Products_06.jpeg",
+    specifications: "Items: Deluxe, Packaging: Deluxe Box",
+    size: "L-33cm X W-28cm X H-14cm"
+  },
+  {
+    id: "H6034",
+    name: "Luxury Gift Set",
+    category: "Mix Products",
+    description: "Luxury gift set with premium items",
+    image: "/Multi_Products_07.jpeg",
+    specifications: "Items: Luxury, Packaging: Luxury Box",
+    size: "L-34cm X W-29cm X H-13cm"
+  },
+  {
+    id: "H6035",
+    name: "Exclusive Collection",
+    category: "Mix Products",
+    description: "Exclusive collection of corporate gifts",
+    image: "/Multi_Products_08.jpeg",
+    specifications: "Items: Exclusive, Packaging: Exclusive Box",
+    size: "L-30cm X W-25cm X H-11cm"
   }
 ];
 
 export const categories = [
   "All",
-  "Premium Combo",
-  "Executive Combo", 
-  "Deluxe Combo",
-  "Classic Combo",
-  "Standard Combo",
-  "Office Planner Diaries",
-  "Office Notebook Diaries",
-  "Lunch Boxes",
-  "Photo Frames",
-  "Office Products",
-  "Combo Sets"
+  "Premium Gift Combo",
+  "Office Diaries",
+  "Eco-Diaries",
+  "Ball Pens",
+  "Travel/Laptop Bag",
+  "Travel Organizer Bag",
+  "Keychains",
+  "Water Bottle",
+  "Tea-Coffee Mugs",
+  "Laptop/Mobile Stand",
+  "USB Pendrive",
+  "Mix Products"
 ];

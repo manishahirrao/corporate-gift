@@ -112,7 +112,7 @@ export function HeroSection() {
                 </div>
                 <div>
                   <p className="font-semibold text-card-foreground text-sm">Gift Delivered!</p>
-                  <p className="text-xs text-muted-foreground">Just now - San Francisco</p>
+                  <p className="text-xs text-muted-foreground">Just now - Mumbai</p>
                 </div>
               </div>
             </div>

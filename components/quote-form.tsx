@@ -7,11 +7,14 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { CheckCircle2, Send, Gift, Building2, Users, Calendar } from "lucide-react"
+import { CheckCircle2, Send, Gift, Building2, Users, Calendar, Loader2 } from "lucide-react"
+import { submitQuoteToGoogleSheets, submitQuoteViaEmail, type QuoteFormData } from "@/lib/google-sheets"
 
 export function QuoteForm() {
   const sectionRef = useRef<HTMLDivElement>(null)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
+  const [submitMessage, setSubmitMessage] = useState("")
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -42,10 +45,62 @@ export function QuoteForm() {
     return () => observer.disconnect()
   }, [])
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    if (formData.name && formData.email && formData.company && formData.phone) {
-      setIsSubmitted(true)
+    
+    if (!formData.name || !formData.email || !formData.company || !formData.phone) {
+      setSubmitMessage("Please fill in all required fields")
+      return
+    }
+
+    setIsLoading(true)
+    setSubmitMessage("")
+
+    try {
+      // Try Google Sheets first, fallback to email
+      const result = await submitQuoteToGoogleSheets(formData as QuoteFormData)
+      
+      if (result.success) {
+        setIsSubmitted(true)
+        setSubmitMessage(result.message)
+        // Reset form
+        setFormData({
+          name: "",
+          email: "",
+          company: "",
+          phone: "",
+          giftType: "",
+          quantity: "",
+          budget: "",
+          occasion: "",
+          message: "",
+        })
+      } else {
+        // Fallback to email if Google Sheets fails
+        const emailResult = await submitQuoteViaEmail(formData as QuoteFormData)
+        if (emailResult.success) {
+          setIsSubmitted(true)
+          setSubmitMessage(emailResult.message)
+          setFormData({
+            name: "",
+            email: "",
+            company: "",
+            phone: "",
+            giftType: "",
+            quantity: "",
+            budget: "",
+            occasion: "",
+            message: "",
+          })
+        } else {
+          setSubmitMessage("Failed to submit. Please contact us directly.")
+        }
+      }
+    } catch (error) {
+      console.error('Submit error:', error)
+      setSubmitMessage("An error occurred. Please try again.")
+    } finally {
+      setIsLoading(false)
     }
   }
 
@@ -274,11 +329,27 @@ export function QuoteForm() {
                   <Button
                     type="submit"
                     size="lg"
+                    disabled={isLoading}
                     className="w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-full h-14 text-base group"
                   >
-                    Request Your Quote
-                    <Send className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    {isLoading ? (
+                      <>
+                        <Loader2 className="mr-2 w-4 h-4 animate-spin" />
+                        Submitting...
+                      </>
+                    ) : (
+                      <>
+                        Request Your Quote
+                        <Send className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                      </>
+                    )}
                   </Button>
+
+                  {submitMessage && (
+                    <div className={`text-center text-sm ${submitMessage.includes('success') || submitMessage.includes('successfully') ? 'text-green-600' : 'text-red-600'}`}>
+                      {submitMessage}
+                    </div>
+                  )}
 
                   <p className="text-xs text-center text-muted-foreground">
                     By submitting this form, you agree to our Privacy Policy. We'll never share your information.

@@ -11,7 +11,7 @@ export function ProductsSection() {
   const sectionRef = useRef<HTMLDivElement>(null)
   const [activeCategory, setActiveCategory] = useState("All")
   const [hoveredId, setHoveredId] = useState<string | null>(null)
-  const [displayCount, setDisplayCount] = useState(8)
+  const [displayCount, setDisplayCount] = useState(16)
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
 
@@ -41,7 +41,8 @@ export function ProductsSection() {
   const handleCategoryChange = (category: string) => {
     console.log('Filter clicked:', category, 'Products:', getProductCount(category))
     setActiveCategory(category)
-    setDisplayCount(8) // Reset display count when category changes
+    // Reset display count - show more for "All" category
+    setDisplayCount(category === "All" ? 16 : 8)
   }
 
   const getImageSrc = (imagePath?: string) => {
@@ -100,6 +101,7 @@ export function ProductsSection() {
         <div
           className="animate-on-scroll opacity-0 flex flex-wrap justify-center gap-3 mb-12"
           style={{ animationDelay: "300ms" }}
+          suppressHydrationWarning
         >
           {categories.map((category) => (
             <button
@@ -110,6 +112,7 @@ export function ProductsSection() {
                   ? "bg-primary text-primary-foreground shadow-lg ring-2 ring-primary/20"
                   : "bg-gray-100 text-gray-700 hover:bg-gray-200 hover:shadow-md border border-gray-300"
               }`}
+              suppressHydrationWarning
             >
               {category}
             </button>
@@ -130,10 +133,13 @@ export function ProductsSection() {
                 <img
                     src={getImageSrc(product.image)}
                     alt={product.name}
-                    className="w-full h-full object-cover"
-                    loading={index < 4 ? "eager" : "lazy"}
+                    className="w-full h-full object-contain p-3 transition-transform duration-300 group-hover:scale-105"
+                    loading={index < 8 ? "eager" : "lazy"}
+                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
                     onError={(e) => {
                       console.log('Image failed to load:', getImageSrc(product.image))
+                      // Fallback to a placeholder
+                      e.currentTarget.src = '/placeholder.svg'
                     }}
                     onLoad={() => {
                       console.log('Image loaded successfully:', getImageSrc(product.image))
@@ -169,7 +175,7 @@ export function ProductsSection() {
 
         {/* Load More Button */}
         {filteredProducts.length < (activeCategory === "All" ? products.length : products.filter(p => p.category === activeCategory).length) && (
-          <div className="animate-on-scroll opacity-0 text-center mt-12" style={{ animationDelay: "500ms" }}>
+          <div className="text-center mt-12">
             <Button 
               onClick={() => setDisplayCount(prev => prev + 8)}
               variant="outline" 

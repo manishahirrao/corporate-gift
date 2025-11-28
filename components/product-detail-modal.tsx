@@ -6,7 +6,6 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Package, Ruler, Palette, Info, ArrowRight } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
 import type { Product } from "@/data/products"
 
 interface ProductDetailModalProps {
@@ -34,13 +33,14 @@ export function ProductDetailModal({ product, isOpen, onClose }: ProductDetailMo
         <div className="space-y-6">
           {/* Product Image */}
           <div className="relative aspect-square rounded-xl overflow-hidden bg-secondary">
-            <Image
+            <img
               src={getImageSrc(product.image)}
               alt={product.name}
-              fill
-              className="object-cover"
-              priority
-              sizes="(max-width: 768px) 100vw, 50vw"
+              className="w-full h-full object-contain p-4"
+              onError={(e) => {
+                console.log('Modal image failed to load:', getImageSrc(product.image))
+                e.currentTarget.src = '/placeholder.svg'
+              }}
             />
           </div>
 
