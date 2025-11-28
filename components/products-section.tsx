@@ -119,18 +119,19 @@ export function ProductsSection() {
               onMouseLeave={() => setHoveredId(null)}
               onClick={() => handleProductClick(product)}
             >
-              <div className="relative aspect-square rounded-2xl overflow-hidden mb-3 sm:mb-4 bg-gray-100">
+              <div className="relative aspect-square rounded-2xl overflow-hidden mb-3 sm:mb-4 bg-red-100 border-2 border-red-500">
                 <img
                     src={getImageSrc(product.image)}
                     alt={product.name}
-                    className="w-full h-full object-cover p-2 transition-transform duration-300 group-hover:scale-105"
+                    className="block w-full h-full object-cover"
+                    style={{display: 'block', visibility: 'visible', opacity: 1}}
                     loading={index < 8 ? "eager" : "lazy"}
                     sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
                     onError={(e) => {
-                      // Image failed to load silently
+                      console.error('Image failed to load:', getImageSrc(product.image))
                     }}
                     onLoad={() => {
-                      // Image loaded successfully
+                      console.log('Image loaded successfully:', getImageSrc(product.image))
                     }}
                   />
                 {product.featured && (

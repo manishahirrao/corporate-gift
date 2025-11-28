@@ -36,7 +36,7 @@ export function ProductDetailModal({ product, isOpen, onClose }: ProductDetailMo
             <img
               src={getImageSrc(product.image)}
               alt={product.name}
-              className="w-full h-full object-cover p-2"
+              className="w-full h-full object-cover"
               onError={(e) => {
                 // Modal image failed to load silently
               }}
