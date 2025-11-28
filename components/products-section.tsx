@@ -1,7 +1,6 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Gift, Heart, Star, Package, Clock, Shield } from "lucide-react"
 import Link from "next/link"
@@ -128,12 +127,11 @@ export function ProductsSection() {
               onClick={() => handleProductClick(product)}
             >
               <div className="relative aspect-square rounded-2xl overflow-hidden mb-3 sm:mb-4 bg-gray-100">
-                <Image
+                <img
                     src={getImageSrc(product.image)}
                     alt={product.name}
-                    fill
-                    className="object-cover"
-                    priority={index < 4}
+                    className="w-full h-full object-cover"
+                    loading={index < 4 ? "eager" : "lazy"}
                     onError={(e) => {
                       console.log('Image failed to load:', getImageSrc(product.image))
                     }}

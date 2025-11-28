@@ -6,7 +6,6 @@ const nextConfig = {
   // Configure images for static export
   images: {
     unoptimized: true, // Required for static export
-    domains: [], // Add any external image domains here
   },
   
   // TypeScript configuration
@@ -24,6 +23,9 @@ const nextConfig = {
   
   // Enable source maps in production
   productionBrowserSourceMaps: true,
+  
+  // Ensure trailing slash for static export
+  trailingSlash: true,
 };
 
 export default nextConfig;

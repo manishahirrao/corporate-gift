@@ -3,7 +3,6 @@
 import { useEffect, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Sparkles } from "lucide-react"
-import Image from "next/image"
 import Link from "next/link"
 
 export function HeroSection() {
@@ -95,12 +94,11 @@ export function HeroSection() {
           {/* Right Content - Image */}
           <div className="relative animate-on-scroll opacity-0 order-1 lg:order-2" style={{ animationDelay: "200ms" }}>
             <div className="relative aspect-[4/5] sm:aspect-[3/4] lg:aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
-              <Image
+              <img
                 src="/elegant_luxury_gift_box_with_ribbon_premium_corpor.jpg"
                 alt="Premium corporate gift box"
-                fill
-                className="object-cover"
-                priority
+                className="w-full h-full object-cover"
+                loading="eager"
               />
             </div>
 
