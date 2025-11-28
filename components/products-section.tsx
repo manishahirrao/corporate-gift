@@ -120,24 +120,34 @@ export function ProductsSection() {
               onClick={() => handleProductClick(product)}
             >
               <div className="relative aspect-square rounded-2xl overflow-hidden mb-3 sm:mb-4 bg-white border border-gray-200">
+                {/* Debug: Show image URL */}
+                <div className="absolute top-0 left-0 bg-black text-white text-xs p-1 z-10 rounded-bl">
+                  {getImageSrc(product.image)}
+                </div>
                 <img
                     src={getImageSrc(product.image)}
                     alt={product.name}
                     className="block w-full h-full object-cover"
                     onError={(e) => {
                       console.error('Image failed to load:', getImageSrc(product.image))
-                      // Create a colored div as fallback
+                      console.error('Full URL:', window.location.origin + getImageSrc(product.image))
+                      // Create a colored div as fallback with URL info
                       const div = document.createElement('div')
                       div.style.width = '100%'
                       div.style.height = '100%'
                       div.style.background = 'linear-gradient(45deg, #ff6b6b, #4ecdc4)'
                       div.style.display = 'flex'
+                      div.style.flexDirection = 'column'
                       div.style.alignItems = 'center'
                       div.style.justifyContent = 'center'
                       div.style.color = 'white'
                       div.style.fontWeight = 'bold'
-                      div.style.fontSize = '14px'
-                      div.textContent = product.name.substring(0, 15) + '...'
+                      div.style.fontSize = '12px'
+                      div.style.padding = '10px'
+                      div.innerHTML = `
+                        <div>${product.name.substring(0, 15)}...</div>
+                        <div style="font-size: 10px; margin-top: 5px; opacity: 0.8">${getImageSrc(product.image)}</div>
+                      `
                       if (e.currentTarget.parentNode) {
                         e.currentTarget.parentNode.replaceChild(div, e.currentTarget)
                       }
