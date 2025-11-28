@@ -45,7 +45,7 @@ export function ProductsSection() {
   }
 
   const getImageSrc = (imagePath?: string) => {
-    if (!imagePath) return "/placeholder.svg"
+    if (!imagePath) return "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI2RkZCIvPjx0ZXh0IHg9IjUwIiB5PSI1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSIjNjY2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+Tm8gSW1hZ2U8L3RleHQ+PC9zdmc+"
     // Ensure path starts with "/"
     return imagePath.startsWith("/") ? imagePath : `/${imagePath}`
   }
@@ -126,15 +126,21 @@ export function ProductsSection() {
                     className="block w-full h-full object-cover"
                     onError={(e) => {
                       console.error('Image failed to load:', getImageSrc(product.image))
-                      // Use a placeholder gradient as fallback
-                      e.currentTarget.style.background = `linear-gradient(135deg, #667eea 0%, #764ba2 100%)`
-                      e.currentTarget.style.display = 'flex'
-                      e.currentTarget.style.alignItems = 'center'
-                      e.currentTarget.style.justifyContent = 'center'
-                      e.currentTarget.style.color = 'white'
-                      e.currentTarget.style.fontSize = '12px'
-                      e.currentTarget.style.fontWeight = 'bold'
-                      e.currentTarget.textContent = product.name.substring(0, 15) + '...'
+                      // Create a colored div as fallback
+                      const div = document.createElement('div')
+                      div.style.width = '100%'
+                      div.style.height = '100%'
+                      div.style.background = 'linear-gradient(45deg, #ff6b6b, #4ecdc4)'
+                      div.style.display = 'flex'
+                      div.style.alignItems = 'center'
+                      div.style.justifyContent = 'center'
+                      div.style.color = 'white'
+                      div.style.fontWeight = 'bold'
+                      div.style.fontSize = '14px'
+                      div.textContent = product.name.substring(0, 15) + '...'
+                      if (e.currentTarget.parentNode) {
+                        e.currentTarget.parentNode.replaceChild(div, e.currentTarget)
+                      }
                     }}
                     onLoad={() => {
                       console.log('Image loaded successfully:', getImageSrc(product.image))
