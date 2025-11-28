@@ -119,19 +119,25 @@ export function ProductsSection() {
               onMouseLeave={() => setHoveredId(null)}
               onClick={() => handleProductClick(product)}
             >
-              <div className="relative aspect-square rounded-2xl overflow-hidden mb-3 sm:mb-4 bg-red-100 border-2 border-red-500">
+              <div className="relative aspect-square rounded-2xl overflow-hidden mb-3 sm:mb-4 bg-white border border-gray-200">
                 <img
-                    src="https://picsum.photos/200/200"
-                    alt="Test External Image"
+                    src={getImageSrc(product.image)}
+                    alt={product.name}
                     className="block w-full h-full object-cover"
-                    style={{display: 'block', visibility: 'visible', opacity: 1}}
-                    loading="eager"
                     onError={(e) => {
-                      console.error('External image failed to load')
-                      e.currentTarget.src = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI2YwMCIvPjx0ZXh0IHg9IjUwIiB5PSI1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkV4dGVybmFsPC90ZXh0Pjwvc3ZnPg=="
+                      console.error('Image failed to load:', getImageSrc(product.image))
+                      // Use a placeholder gradient as fallback
+                      e.currentTarget.style.background = `linear-gradient(135deg, #667eea 0%, #764ba2 100%)`
+                      e.currentTarget.style.display = 'flex'
+                      e.currentTarget.style.alignItems = 'center'
+                      e.currentTarget.style.justifyContent = 'center'
+                      e.currentTarget.style.color = 'white'
+                      e.currentTarget.style.fontSize = '12px'
+                      e.currentTarget.style.fontWeight = 'bold'
+                      e.currentTarget.textContent = product.name.substring(0, 15) + '...'
                     }}
                     onLoad={() => {
-                      console.log('External image loaded successfully')
+                      console.log('Image loaded successfully:', getImageSrc(product.image))
                     }}
                   />
                 {product.featured && (
