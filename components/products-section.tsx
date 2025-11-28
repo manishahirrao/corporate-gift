@@ -126,21 +126,8 @@ export function ProductsSection() {
                     className="block w-full h-full object-cover"
                     onError={(e) => {
                       console.error('Image failed to load:', getImageSrc(product.image))
-                      // Create a colored div as fallback
-                      const div = document.createElement('div')
-                      div.style.width = '100%'
-                      div.style.height = '100%'
-                      div.style.background = 'linear-gradient(45deg, #ff6b6b, #4ecdc4)'
-                      div.style.display = 'flex'
-                      div.style.alignItems = 'center'
-                      div.style.justifyContent = 'center'
-                      div.style.color = 'white'
-                      div.style.fontWeight = 'bold'
-                      div.style.fontSize = '14px'
-                      div.textContent = product.name.substring(0, 15) + '...'
-                      if (e.currentTarget.parentNode) {
-                        e.currentTarget.parentNode.replaceChild(div, e.currentTarget)
-                      }
+                      // Just hide the broken image, don't replace with placeholder
+                      e.currentTarget.style.display = 'none'
                     }}
                     onLoad={() => {
                       console.log('Image loaded successfully:', getImageSrc(product.image))
