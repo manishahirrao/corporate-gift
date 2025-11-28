@@ -121,17 +121,16 @@ export function ProductsSection() {
             >
               <div className="relative aspect-square rounded-2xl overflow-hidden mb-3 sm:mb-4 bg-red-100 border-2 border-red-500">
                 <img
-                    src={getImageSrc(product.image)}
-                    alt={product.name}
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iIzAwZiIvPjx0ZXh0IHg9IjUwIiB5PSI1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPlRlc3QgSW1hZ2U8L3RleHQ+PC9zdmc+"
+                    alt="Test Image"
                     className="block w-full h-full object-cover"
                     style={{display: 'block', visibility: 'visible', opacity: 1}}
-                    loading={index < 8 ? "eager" : "lazy"}
-                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                    loading="eager"
                     onError={(e) => {
-                      console.error('Image failed to load:', getImageSrc(product.image))
+                      console.error('Test image failed to load')
                     }}
                     onLoad={() => {
-                      console.log('Image loaded successfully:', getImageSrc(product.image))
+                      console.log('Test image loaded successfully')
                     }}
                   />
                 {product.featured && (
