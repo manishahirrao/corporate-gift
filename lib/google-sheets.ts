@@ -24,11 +24,7 @@ export async function submitQuoteToGoogleSheets(formData: any) {
       submittedAt: new Date().toLocaleString(),
     };
 
-    console.log('Submitting quote data:', submissionData);
-    
-    // Use the URL directly for now
     const scriptUrl = 'https://script.google.com/macros/s/AKfycbwX9jrcVYXyYtNW6OugraG9I4sggHQC9BbKbTgh1G8gK14RwMtxpBFfBuBbrvUxQYop6w/exec';
-    console.log('Script URL:', scriptUrl);
 
     const response = await fetch(scriptUrl, {
       method: 'POST',
@@ -38,8 +34,6 @@ export async function submitQuoteToGoogleSheets(formData: any) {
       },
       body: JSON.stringify(submissionData),
     });
-    
-    console.log('Request sent to Google Sheets');
     
     // With no-cors mode, we can't read the response
     // But the data is still sent successfully
