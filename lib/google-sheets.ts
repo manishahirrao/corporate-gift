@@ -25,19 +25,19 @@ export async function submitQuoteToGoogleSheets(formData: any) {
     };
 
     console.log('Submitting quote data:', submissionData);
-    console.log('Script URL:', process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL);
+    
+    // Use the URL directly for now
+    const scriptUrl = 'https://script.google.com/macros/s/AKfycbwX9jrcVYXyYtNW6OugraG9I4sggHQC9BbKbTgh1G8gK14RwMtxpBFfBuBbrvUxQYop6w/exec';
+    console.log('Script URL:', scriptUrl);
 
-    const response = await fetch(
-      process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL || 'https://script.google.com/macros/s/AKfycbxRLk7WBygHMpYzc4PiYWPdmfBR1mYF3Os7fE0AYRXEYPL6n_DrKgfW7MWUCJP4_Ro9/exec',
-      {
-        method: 'POST',
-        mode: 'no-cors', // Bypass CORS
-        headers: {
-          'Content-Type': 'text/plain', // Important: use text/plain with no-cors
-        },
-        body: JSON.stringify(submissionData),
-      }
-    );
+    const response = await fetch(scriptUrl, {
+      method: 'POST',
+      mode: 'no-cors', // Bypass CORS
+      headers: {
+        'Content-Type': 'text/plain', // Important: use text/plain with no-cors
+      },
+      body: JSON.stringify(submissionData),
+    });
     
     console.log('Request sent to Google Sheets');
     
@@ -47,9 +47,6 @@ export async function submitQuoteToGoogleSheets(formData: any) {
     
   } catch (error) {
     console.error('Error submitting quote:', error);
-    console.error('Environment variables:', {
-      NEXT_PUBLIC_GOOGLE_SCRIPT_URL: process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL ? 'Set' : 'Not set'
-    });
     return { success: false, message: 'Failed to submit quote. Please try again.' };
   }
 }
