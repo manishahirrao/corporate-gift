@@ -41,11 +41,11 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
-          <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-lg overflow-hidden shadow-sm">
+          <div className="relative w-12 h-12 sm:w-14 sm:h-14">
             <img 
               src="/logo.png" 
               alt="ST" 
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain"
               onError={(e) => {
                 console.error('Logo failed to load')
                 e.currentTarget.style.display = 'none'
@@ -58,7 +58,7 @@ export function Header() {
                 fallback.style.justifyContent = 'center'
                 fallback.style.color = 'white'
                 fallback.style.fontWeight = 'bold'
-                fallback.style.fontSize = '20px'
+                fallback.style.fontSize = '18px'
                 fallback.textContent = 'ST'
                 e.currentTarget.parentNode?.appendChild(fallback)
               }}
@@ -122,10 +122,10 @@ export function Header() {
             </Link>
           ))}
           <a
-            href="tel:+1234567890"
+            href="tel: +91-9131379151"
             className="text-lg font-medium text-muted-foreground hover:text-foreground transition-colors py-2"
           >
-            Call: +1 (234) 567-890
+            Call:  +91-9131379151
           </a>
           <div className="pt-4 border-t border-border">
             <Button asChild className="w-full bg-primary text-primary-foreground rounded-full">
