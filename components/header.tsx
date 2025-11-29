@@ -83,12 +83,20 @@ export function Header() {
         </nav>
 
         <div className="hidden lg:flex items-center gap-4">
-          <a
-            href="tel:+91-9131379151"
-            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors hidden xl:block"
-          >
-            +91-9131379151
-          </a>
+          <div className="hidden xl:flex flex-col items-end">
+            <a
+              href="tel:+91-9131379151"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+            >
+              +91-9131379151
+            </a>
+            <a
+              href="tel:+91-7545088000"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+            >
+              +91-7545088000
+            </a>
+          </div>
           <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-4 sm:px-6 text-sm">
             <Link href="#quote">Request Quote</Link>
           </Button>
@@ -121,12 +129,20 @@ export function Header() {
               {link.label}
             </Link>
           ))}
-          <a
-            href="tel: +91-9131379151"
-            className="text-lg font-medium text-muted-foreground hover:text-foreground transition-colors py-2"
-          >
-            Call:  +91-9131379151
-          </a>
+          <div className="flex flex-col gap-2 py-2">
+            <a
+              href="tel:+91-9131379151"
+              className="text-lg font-medium text-muted-foreground hover:text-foreground transition-colors py-1"
+            >
+              Call: +91-9131379151
+            </a>
+            <a
+              href="tel:+91-7545088000"
+              className="text-lg font-medium text-muted-foreground hover:text-foreground transition-colors py-1"
+            >
+              Call: +91-7545088000
+            </a>
+          </div>
           <div className="pt-4 border-t border-border">
             <Button asChild className="w-full bg-primary text-primary-foreground rounded-full">
               <Link href="#quote" onClick={() => setIsMobileMenuOpen(false)}>

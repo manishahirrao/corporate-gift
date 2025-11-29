@@ -91,12 +91,15 @@ export function HeroSection() {
             </div>
           </div>
 
-          {/* Right Content - Image */}
+          {/* Right Content - Video */}
           <div className="relative animate-on-scroll opacity-0 order-1 lg:order-2" style={{ animationDelay: "200ms" }}>
             <div className="relative aspect-[4/5] sm:aspect-[3/4] lg:aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
-              <img
-                src="/elegant_luxury_gift_box_with_ribbon_premium_corpor.jpg"
-                alt="Premium corporate gift box"
+              <video
+                src="/Bag_video.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
                 className="w-full h-full object-cover"
                 loading="eager"
               />

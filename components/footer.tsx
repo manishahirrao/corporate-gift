@@ -85,9 +85,20 @@ export function Footer() {
               </div>
               <div>
                 <p className="text-sm font-medium mb-1">Phone</p>
-                <a href="tel:9131379151" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
-                  9131379151
-                </a>
+                <div className="flex flex-col gap-1">
+                  <a href="tel:+91-9131379151" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                    +91-9131379151
+                  </a>
+                  <a href="tel:+91-7545088000" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                    +91-7545088000
+                  </a>
+                </div>
+              </div>
+              <div>
+                <p className="text-sm font-medium mb-1">GSTIN</p>
+                <p className="text-sm text-primary-foreground/70">
+                  09ABFPS1234C1ZV
+                </p>
               </div>
               <div>
                 <p className="text-sm font-medium mb-1">Address</p>
