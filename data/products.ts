@@ -596,7 +596,7 @@ export const products: Product[] = [
     name: "Corporate Messenger Bag",
     category: "Bags",
     description: "Professional messenger bag for corporate executives",
-    image: "/Travel_bags_04.jpeg",
+    image: "/Bags_04.jpg",
     specifications: "Material: Premium Leather, Multiple Compartments",
     size: "L-40cm X W-30cm X H-10cm",
     featured: true
@@ -606,7 +606,7 @@ export const products: Product[] = [
     name: "Business Backpack",
     category: "Bags",
     description: "Stylish business backpack with laptop sleeve",
-    image: "/Travel_bags_05.jpeg",
+    image: "/Bags_05.jpg",
     specifications: "Material: Water-resistant Fabric, Laptop Sleeve: 15.6 inch",
     size: "L-45cm X W-32cm X H-15cm"
   },
@@ -615,7 +615,7 @@ export const products: Product[] = [
     name: "Executive Travel Bag",
     category: "Bags",
     description: "Luxury travel bag for business trips",
-    image: "/Travel_bags_06.jpeg",
+    image: "/Bags_06.jpg",
     specifications: "Material: Premium Canvas, Multiple Pockets",
     size: "L-50cm X W-35cm X H-20cm"
   },
@@ -624,7 +624,7 @@ export const products: Product[] = [
     name: "Professional Briefcase",
     category: "Bags",
     description: "Classic briefcase with modern features",
-    image: "/Laptop_bags_03.jpeg",
+    image: "/Bags_07.jpg",
     specifications: "Material: Genuine Leather, Lockable Compartments",
     size: "L-42cm X W-28cm X H-12cm"
   },
@@ -633,9 +633,176 @@ export const products: Product[] = [
     name: "Casual Business Bag",
     category: "Bags",
     description: "Versatile bag for casual and business use",
-    image: "/Laptop_bags_04.jpeg",
+    image: "/Bags_08.jpg",
     specifications: "Material: Premium Fabric, Adjustable Strap",
     size: "L-38cm X W-25cm X H-18cm"
+  },
+  {
+    id: "B7006",
+    name: "Luxury Handbag",
+    category: "Bags",
+    description: "Elegant handbag for corporate professionals",
+    image: "/Bags_09.jpg",
+    specifications: "Material: Premium Leather, Gold Hardware",
+    size: "L-30cm X W-20cm X H-15cm"
+  },
+  {
+    id: "B7007",
+    name: "Corporate Tote Bag",
+    category: "Bags",
+    description: "Spacious tote bag for office essentials",
+    image: "/Bags_10.jpg",
+    specifications: "Material: Durable Canvas, Inner Pocket",
+    size: "L-35cm X W-25cm X H-20cm"
+  },
+  {
+    id: "B7008",
+    name: "Designer Crossbody Bag",
+    category: "Bags",
+    description: "Stylish crossbody bag for daily use",
+    image: "/Bags_12.jpg",
+    specifications: "Material: Synthetic Leather, Adjustable Strap",
+    size: "L-28cm X W-22cm X H-8cm"
+  },
+  {
+    id: "B7009",
+    name: "Executive Portfolio Bag",
+    category: "Bags",
+    description: "Professional portfolio bag for meetings",
+    image: "/Bags_13.jpg",
+    specifications: "Material: Premium Fabric, Document Holder",
+    size: "L-40cm X W-30cm X H-5cm"
+  },
+  {
+    id: "B7010",
+    name: "Business Travel Duffel",
+    category: "Bags",
+    description: "Compact duffel bag for short business trips",
+    image: "/Bags_14.jpg",
+    specifications: "Material: Water-resistant Nylon, Side Pockets",
+    size: "L-45cm X W-25cm X H-25cm"
+  },
+  // College/Corporate Tshirts Category
+  {
+    id: "T8001",
+    name: "Corporate Polo T-Shirt",
+    category: "College/Corporate Tshirts",
+    description: "Premium polo shirt for corporate professionals",
+    image: "/T-shirt_01.jpg",
+    specifications: "Material: Cotton Blend, Collar Style: Polo",
+    size: "S, M, L, XL, XXL",
+    colors: ["White", "Black", "Navy Blue", "Royal Blue"],
+    featured: true
+  },
+  {
+    id: "T8002",
+    name: "Executive Round Neck T-Shirt",
+    category: "College/Corporate Tshirts",
+    description: "Comfortable round neck t-shirt for office wear",
+    image: "/T-shirt_02.jpg",
+    specifications: "Material: 100% Cotton, Fit: Regular",
+    size: "S, M, L, XL, XXL",
+    colors: ["White", "Black", "Gray", "Navy"]
+  },
+  {
+    id: "T8003",
+    name: "Corporate Collared T-Shirt",
+    category: "College/Corporate Tshirts",
+    description: "Professional collared t-shirt with company logo space",
+    image: "/T-shirt_03.jpg",
+    specifications: "Material: Polyester Blend, Collar: Button-down",
+    size: "S, M, L, XL, XXL",
+    colors: ["White", "Light Blue", "Pink", "Yellow"]
+  },
+  {
+    id: "T8004",
+    name: "Business V-Neck T-Shirt",
+    category: "College/Corporate Tshirts",
+    description: "Elegant v-neck t-shirt for business casual",
+    image: "/T-shirt_04.jpg",
+    specifications: "Material: Cotton Elastane, Neck: V-Shape",
+    size: "S, M, L, XL, XXL",
+    colors: ["Black", "White", "Navy", "Gray"]
+  },
+  {
+    id: "T8005",
+    name: "Corporate Sports T-Shirt",
+    category: "College/Corporate Tshirts",
+    description: "Athletic fit t-shirt for corporate events",
+    image: "/T-shirt_05.jpg",
+    specifications: "Material: Dry-Fit Fabric, Fit: Athletic",
+    size: "S, M, L, XL, XXL",
+    colors: ["Red", "Blue", "Green", "Black"]
+  },
+  {
+    id: "T8006",
+    name: "Premium Corporate T-Shirt",
+    category: "College/Corporate Tshirts",
+    description: "High-quality t-shirt for executive meetings",
+    image: "/T-shirt_06.jpg",
+    specifications: "Material: Premium Cotton, Finish: Anti-wrinkle",
+    size: "S, M, L, XL, XXL",
+    colors: ["White", "Black", "Navy Blue"]
+  },
+  {
+    id: "T8007",
+    name: "College Branded T-Shirt",
+    category: "College/Corporate Tshirts",
+    description: "Perfect t-shirt for college events and branding",
+    image: "/T-shirt_07.jpg",
+    specifications: "Material: Cotton Polyester, Print Area: Large",
+    size: "S, M, L, XL, XXL",
+    colors: ["White", "Black", "Red", "Blue"]
+  },
+  {
+    id: "T8008",
+    name: "Corporate Henley T-Shirt",
+    category: "College/Corporate Tshirts",
+    description: "Stylish henley t-shirt for corporate casual",
+    image: "/T-shirt_08.jpg",
+    specifications: "Material: Cotton Blend, Buttons: 3-Button Placket",
+    size: "S, M, L, XL, XXL",
+    colors: ["Gray", "Navy", "White", "Black"]
+  },
+  {
+    id: "T8009",
+    name: "Executive Pique T-Shirt",
+    category: "College/Corporate Tshirts",
+    description: "Luxury pique t-shirt for senior executives",
+    image: "/T-shirt_09.jpg",
+    specifications: "Material: Pique Cotton, Texture: Woven",
+    size: "S, M, L, XL, XXL",
+    colors: ["White", "Navy", "Black", "Burgundy"]
+  },
+  {
+    id: "T8010",
+    name: "Corporate Team T-Shirt",
+    category: "College/Corporate Tshirts",
+    description: "Team t-shirt perfect for corporate team building",
+    image: "/T-shirt_10.jpg",
+    specifications: "Material: Quick-Dry Fabric, Logo Space: Front & Back",
+    size: "S, M, L, XL, XXL",
+    colors: ["Various Colors Available"]
+  },
+  {
+    id: "T8011",
+    name: "Business Casual T-Shirt",
+    category: "College/Corporate Tshirts",
+    description: "Versatile t-shirt for business casual environments",
+    image: "/T-shirt_11.jpg",
+    specifications: "Material: Soft Cotton, Fit: Slim",
+    size: "S, M, L, XL, XXL",
+    colors: ["White", "Light Gray", "Blue", "Black"]
+  },
+  {
+    id: "T8012",
+    name: "Premium Corporate Polo",
+    category: "College/Corporate Tshirts",
+    description: "Premium polo shirt for high-end corporate branding",
+    image: "/T-shirt_12.jpg",
+    specifications: "Material: Egyptian Cotton, Embroidery Ready",
+    size: "S, M, L, XL, XXL",
+    colors: ["White", "Navy", "Black", "Forest Green"]
   },
   {
     id: "H6006",
@@ -916,6 +1083,7 @@ export const categories = [
   "Eco-Diaries",
   "Ball Pens",
   "Bags",
+  "College/Corporate Tshirts",
   "Travel/Laptop Bag",
   "Travel Organizer Bag",
   "Keychains",
