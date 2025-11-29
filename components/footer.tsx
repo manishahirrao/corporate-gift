@@ -97,7 +97,7 @@ export function Footer() {
               <div>
                 <p className="text-sm font-medium mb-1">GSTIN</p>
                 <p className="text-sm text-primary-foreground/70">
-                  09ABFPS1234C1ZV
+                  09CTYPS1808P1ZH
                 </p>
               </div>
               <div>
