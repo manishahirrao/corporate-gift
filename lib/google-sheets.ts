@@ -24,6 +24,9 @@ export async function submitQuoteToGoogleSheets(formData: any) {
       submittedAt: new Date().toLocaleString(),
     };
 
+    console.log('Submitting quote data:', submissionData);
+    console.log('Script URL:', process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL);
+
     const response = await fetch(
       process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL || 'https://script.google.com/macros/s/AKfycbxRLk7WBygHMpYzc4PiYWPdmfBR1mYF3Os7fE0AYRXEYPL6n_DrKgfW7MWUCJP4_Ro9/exec',
       {
@@ -36,12 +39,17 @@ export async function submitQuoteToGoogleSheets(formData: any) {
       }
     );
     
+    console.log('Request sent to Google Sheets');
+    
     // With no-cors mode, we can't read the response
     // But the data is still sent successfully
     return { success: true, message: 'Quote submitted successfully!' };
     
   } catch (error) {
     console.error('Error submitting quote:', error);
+    console.error('Environment variables:', {
+      NEXT_PUBLIC_GOOGLE_SCRIPT_URL: process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL ? 'Set' : 'Not set'
+    });
     return { success: false, message: 'Failed to submit quote. Please try again.' };
   }
 }
