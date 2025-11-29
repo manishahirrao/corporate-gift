@@ -13,11 +13,6 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   
-  // ESLint configuration
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  
   // Trailing slash helps with static hosting
   trailingSlash: true,
   
