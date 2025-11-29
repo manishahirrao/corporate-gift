@@ -41,8 +41,31 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
-          <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-lg overflow-hidden shadow-sm">
-            <img src="/logo.png" alt="ST" className="w-full h-full object-contain" />
+          <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-lg overflow-hidden shadow-sm bg-red-100 border-2 border-red-500">
+            <img 
+              src="/logo.png" 
+              alt="ST" 
+              className="w-full h-full object-cover"
+              onError={(e) => {
+                console.error('Logo failed to load')
+                e.currentTarget.style.display = 'none'
+                const fallback = document.createElement('div')
+                fallback.style.width = '100%'
+                fallback.style.height = '100%'
+                fallback.style.background = 'linear-gradient(45deg, #ff6b6b, #4ecdc4)'
+                fallback.style.display = 'flex'
+                fallback.style.alignItems = 'center'
+                fallback.style.justifyContent = 'center'
+                fallback.style.color = 'white'
+                fallback.style.fontWeight = 'bold'
+                fallback.style.fontSize = '20px'
+                fallback.textContent = 'ST'
+                e.currentTarget.parentNode?.appendChild(fallback)
+              }}
+              onLoad={() => {
+                console.log('Logo loaded successfully')
+              }}
+            />
           </div>
           <span className="text-lg sm:text-xl font-serif font-semibold">Surya Traders</span>
         </Link>
