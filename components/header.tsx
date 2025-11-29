@@ -41,7 +41,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
-          <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-lg overflow-hidden shadow-sm bg-red-100 border-2 border-red-500">
+          <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-lg overflow-hidden shadow-sm">
             <img 
               src="/logo.png" 
               alt="ST" 
