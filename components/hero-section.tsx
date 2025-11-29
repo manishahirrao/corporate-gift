@@ -101,7 +101,6 @@ export function HeroSection() {
                 loop
                 playsInline
                 className="w-full h-full object-cover"
-                loading="eager"
               />
             </div>
 
