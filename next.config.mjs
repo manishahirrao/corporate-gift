@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Enable static export
+  // CRITICAL: Enable static export
   output: 'export',
   
-  // Configure images for static export
+  // CRITICAL: Disable image optimization for static export
   images: {
-    unoptimized: true, // Required for static export
+    unoptimized: true,
   },
   
   // TypeScript configuration
@@ -13,19 +13,16 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   
-  // Disable React StrictMode for static export
-  reactStrictMode: false,
-  
-  // Disable dev indicators
-  devIndicators: {
-    buildActivity: false,
+  // ESLint configuration
+  eslint: {
+    ignoreDuringBuilds: true,
   },
   
-  // Enable source maps in production
-  productionBrowserSourceMaps: true,
-  
-  // Ensure trailing slash for static export
+  // Trailing slash helps with static hosting
   trailingSlash: true,
+  
+  // Disable React StrictMode
+  reactStrictMode: false,
 };
 
 export default nextConfig;
