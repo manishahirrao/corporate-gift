@@ -85,16 +85,17 @@ export function Header() {
         <div className="hidden lg:flex items-center gap-4">
           <div className="hidden xl:flex flex-col items-end">
             <a
-              href="tel:+91-9131379151"
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-            >
-              +91-9131379151
-            </a>
-            <a
               href="tel:+91-7545088000"
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
               +91-7545088000
+            </a>
+            <a
+              href="tel:+91-9131379151"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+            >
+             
+               +91-9131379151
             </a>
           </div>
           <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-4 sm:px-6 text-sm">

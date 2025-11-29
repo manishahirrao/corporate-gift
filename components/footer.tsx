@@ -86,11 +86,11 @@ export function Footer() {
               <div>
                 <p className="text-sm font-medium mb-1">Phone</p>
                 <div className="flex flex-col gap-1">
-                  <a href="tel:+91-9131379151" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
-                    +91-9131379151
-                  </a>
                   <a href="tel:+91-7545088000" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
-                    +91-7545088000
+                 +91-7545088000
+                  </a>
+                  <a href="tel:+91-9131379151" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                    +91-9131379151 
                   </a>
                 </div>
               </div>

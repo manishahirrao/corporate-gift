@@ -103,7 +103,7 @@ export default function CookiePolicy() {
                 <br />
                 Email: suryacorporategifts@gmail.com
                 <br />
-                Phone: 9131379151
+                Phone: 7545088000
               </p>
             </section>
 
