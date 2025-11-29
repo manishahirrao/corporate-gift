@@ -590,6 +590,53 @@ export const products: Product[] = [
     specifications: "Material: Premium Fabric, Laptop Compartment: 14 inch",
     size: "L-35cm X W-25cm X H-8cm"
   },
+  // General Bags Category
+  {
+    id: "B7001",
+    name: "Corporate Messenger Bag",
+    category: "Bags",
+    description: "Professional messenger bag for corporate executives",
+    image: "/Travel_bags_04.jpeg",
+    specifications: "Material: Premium Leather, Multiple Compartments",
+    size: "L-40cm X W-30cm X H-10cm",
+    featured: true
+  },
+  {
+    id: "B7002",
+    name: "Business Backpack",
+    category: "Bags",
+    description: "Stylish business backpack with laptop sleeve",
+    image: "/Travel_bags_05.jpeg",
+    specifications: "Material: Water-resistant Fabric, Laptop Sleeve: 15.6 inch",
+    size: "L-45cm X W-32cm X H-15cm"
+  },
+  {
+    id: "B7003",
+    name: "Executive Travel Bag",
+    category: "Bags",
+    description: "Luxury travel bag for business trips",
+    image: "/Travel_bags_06.jpeg",
+    specifications: "Material: Premium Canvas, Multiple Pockets",
+    size: "L-50cm X W-35cm X H-20cm"
+  },
+  {
+    id: "B7004",
+    name: "Professional Briefcase",
+    category: "Bags",
+    description: "Classic briefcase with modern features",
+    image: "/Laptop_bags_03.jpeg",
+    specifications: "Material: Genuine Leather, Lockable Compartments",
+    size: "L-42cm X W-28cm X H-12cm"
+  },
+  {
+    id: "B7005",
+    name: "Casual Business Bag",
+    category: "Bags",
+    description: "Versatile bag for casual and business use",
+    image: "/Laptop_bags_04.jpeg",
+    specifications: "Material: Premium Fabric, Adjustable Strap",
+    size: "L-38cm X W-25cm X H-18cm"
+  },
   {
     id: "H6006",
     name: "Travel Organizer Bag",
@@ -868,6 +915,7 @@ export const categories = [
   "Office Diaries",
   "Eco-Diaries",
   "Ball Pens",
+  "Bags",
   "Travel/Laptop Bag",
   "Travel Organizer Bag",
   "Keychains",
