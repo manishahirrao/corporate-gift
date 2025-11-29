@@ -1,7 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Playfair_Display, Inter } from "next/font/google"
-import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
 const _playfair = Playfair_Display({
@@ -93,7 +92,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${_playfair.variable} ${_inter.variable} font-sans antialiased`}>
         {children}
-        <Analytics />
       </body>
     </html>
   )
